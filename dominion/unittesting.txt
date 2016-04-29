@@ -1,0 +1,1 @@
+My tests have 20% code coverage. This could definitely be improved by testing more integrated functions that are located elsewhere in the codebase.

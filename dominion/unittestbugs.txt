@@ -1,0 +1,1 @@
+My unit tests did not find any bugs. They give 20% code coverage, testing the hand size, end turn, supply count, and buy card functions. They all succeeded when testing that they changed what they were supposed to change.
