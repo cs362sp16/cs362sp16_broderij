@@ -14,13 +14,20 @@ runAdventurer: adventurer
 	gcov dominion.c >> randomtestadventurer.out
 	cat dominion.c.gcov >> randomtestadventurer.out
 
-randomcard: dominion.o randomtestcard.c rngs.o
-	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.o randomtestcard.c rngs.o -o randomtestcard -lm -g
+randomcard1: dominion.o randomtestcard1.c rngs.o
+	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.o randomtestcard1.c rngs.o -o randomtestcard1 -lm -g
 
-runRandomCard: randomcard
-	./randomtestcard &> randomtestcard.out
-	gcov dominion.c >> randomtestcard.out
-	cat dominion.c.gcov >> randomcard.out
+randomcard2: dominion.o randomtestcard2.c rngs.o
+	gcc -fprofile-arcs -ftest-coverage -Wall -std=c99 dominion.o randomtestcard2.c rngs.o -o randomtestcard2 -lm -g
+
+runRandomCard: randomcard1
+	./randomtestcard1 &> randomtestcard1.out
+	gcov dominion.c >> randomtestcard1.out
+	cat dominion.c.gcov >> randomcard1.out
+	./randomtestcard2 &> randomtestcard2.out
+	gcov dominion.c >> randomtestcard2.out
+	cat dominion.c.gcov >> randomcard2.out
+
 
 testdominion: dominion.o testdominion.c
 	gcc -o testdominion testdominion.c -g dominion.o rngs.o $(CFLAGS)
@@ -122,7 +129,5 @@ randomtests: dominion.o rngs.o randomtestcard.c randomtestadventurer.c
 	cat dominion.c.gcov >> randomtestcard.out
 	gcov dominion.c >> randomtestadventurer.out
 	cat dominion.c.gcov >> randomtestadventurer.out
-
-
 clean:
 	rm -f *.o playdom.exe playdom test.exe test player unittest1 unittest2 unittest3 unittest4 cardtest1 cardtest2 cardtest3 cardtest4 player.exe testInit testInit.exe *.gcov *.gcda *.gcno *.so *.a *.dSYM

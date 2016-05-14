@@ -846,17 +846,22 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
     {
     case adventurer:
 			adventurerf(drawntreasure,temphand,  currentPlayer, state);
+			return 0;
     case council_room:
 			council_roomf(state, currentPlayer, handPos);
+			return 0;
     case feast:
 			feastf(currentPlayer, state, choice1, temphand);
+			return 0;
     case gardens:
       return -1;
 			
     case mine:
 			minef(state, currentPlayer, choice2, handPos, choice1);
+			return 0;
     case remodel:
 		remodelf(state, currentPlayer, choice1, choice2, handPos);
+			return 0;
     case smithy:
       //+3 Cards
       for (i = 0; i < 3; i++)
