@@ -1,10 +1,11 @@
 import subprocess
 import os
+import sys
 
 nullf = open(os.devnull,'w')
 
-dominion1dir = argv[1]
-dominion2dir = argv[2]
+dominion1dir = sys.argv[1]
+dominion2dir = sys.argv[2]
 
 dominions = [(dominion1dir, "one"), (dominion2dir, "two")]
 
