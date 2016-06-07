@@ -1,0 +1,4 @@
+I didn’t actually write the script that compiles and tests the program because a family member was in the hospital and I didn’t have as much time as I had thought. I was able to get the mutations generated, but I did not kill them. Below is what i would have done if it did work.
+
+I was able to get the mutation tool working that was provided by Alex Groce. It created a mutant for each line of the program code. I tested them by compiling them with a bash script and moving the ones that didn’t compile to another folder. After that I would run each test against the mutants and move any failed mutants to the kill folder. Any mutants that are left over I would compare against the original to make sure that my tests didn’t miss anything. If my tests missed certain cases I would rewrite them so that I would be able to have more test coverage.
+

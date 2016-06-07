@@ -1,0 +1,2097 @@
+10: /* MUTANT (rep_op) */        if (*(int*)a <= *(int*)b)
+10: /* MUTANT (rep_op) */        if (*(int*)a < *(int*)b)
+10: /* MUTANT (rep_op) */        if (*(int*)a >= *(int*)b)
+10: /* MUTANT (rep_op) */        if (*(int*)a == *(int*)b)
+10: /* MUTANT (rep_op) */        if (*(int*)a != *(int*)b)
+10: /* MUTANT (negate) */        if(! (*(int*)a > *(int*)b))
+11: /* MUTANT (rep_const) */                return 0;
+11: /* MUTANT (rep_const) */                return -1;
+11: /* MUTANT (rep_const) */                return ((1)+1);
+12: /* MUTANT (rep_op) */        if (*(int*)a <= *(int*)b)
+12: /* MUTANT (rep_op) */        if (*(int*)a > *(int*)b)
+12: /* MUTANT (rep_op) */        if (*(int*)a >= *(int*)b)
+12: /* MUTANT (rep_op) */        if (*(int*)a == *(int*)b)
+12: /* MUTANT (rep_op) */        if (*(int*)a != *(int*)b)
+12: /* MUTANT (negate) */        if(! (*(int*)a < *(int*)b))
+13: /* MUTANT (rep_const) */                return 0;
+13: /* MUTANT (rep_const) */                return 1;
+13: /* MUTANT (rep_const) */                return ((-1)+1);
+13: /* MUTANT (rep_const) */                return ((-1)-1);
+14: /* MUTANT (del_stmt) */ /*         return 0; */ 
+14: /* MUTANT (rep_const) */        return 1;
+14: /* MUTANT (rep_const) */        return -1;
+18: /* MUTANT (del_stmt) */ /*         struct gameState* g = malloc(sizeof(struct gameState)); */ 
+19: /* MUTANT (del_stmt) */ /*         return g; */ 
+24: /* MUTANT (del_stmt) */ /*         int* k = malloc(10 * sizeof(int)); */ 
+24: /* MUTANT (rep_const) */        int* k = malloc(0 * sizeof(int));
+24: /* MUTANT (rep_const) */        int* k = malloc(1 * sizeof(int));
+24: /* MUTANT (rep_const) */        int* k = malloc(-1 * sizeof(int));
+24: /* MUTANT (rep_const) */        int* k = malloc(((10)+1) * sizeof(int));
+24: /* MUTANT (rep_const) */        int* k = malloc(((10)-1) * sizeof(int));
+25: /* MUTANT (del_stmt) */ /*         k[0] = k1; */ 
+25: /* MUTANT (rep_const) */        k[1] = k1;
+25: /* MUTANT (rep_const) */        k[-1] = k1;
+26: /* MUTANT (del_stmt) */ /*         k[1] = k2; */ 
+26: /* MUTANT (rep_const) */        k[0] = k2;
+26: /* MUTANT (rep_const) */        k[-1] = k2;
+26: /* MUTANT (rep_const) */        k[((1)+1)] = k2;
+27: /* MUTANT (del_stmt) */ /*         k[2] = k3; */ 
+27: /* MUTANT (rep_const) */        k[0] = k3;
+27: /* MUTANT (rep_const) */        k[1] = k3;
+27: /* MUTANT (rep_const) */        k[-1] = k3;
+27: /* MUTANT (rep_const) */        k[((2)+1)] = k3;
+27: /* MUTANT (rep_const) */        k[((2)-1)] = k3;
+28: /* MUTANT (del_stmt) */ /*         k[3] = k4; */ 
+28: /* MUTANT (rep_const) */        k[0] = k4;
+28: /* MUTANT (rep_const) */        k[1] = k4;
+28: /* MUTANT (rep_const) */        k[-1] = k4;
+28: /* MUTANT (rep_const) */        k[((3)+1)] = k4;
+28: /* MUTANT (rep_const) */        k[((3)-1)] = k4;
+29: /* MUTANT (del_stmt) */ /*         k[4] = k5; */ 
+29: /* MUTANT (rep_const) */        k[0] = k5;
+29: /* MUTANT (rep_const) */        k[1] = k5;
+29: /* MUTANT (rep_const) */        k[-1] = k5;
+29: /* MUTANT (rep_const) */        k[((4)+1)] = k5;
+29: /* MUTANT (rep_const) */        k[((4)-1)] = k5;
+30: /* MUTANT (del_stmt) */ /*         k[5] = k6; */ 
+30: /* MUTANT (rep_const) */        k[0] = k6;
+30: /* MUTANT (rep_const) */        k[1] = k6;
+30: /* MUTANT (rep_const) */        k[-1] = k6;
+30: /* MUTANT (rep_const) */        k[((5)+1)] = k6;
+30: /* MUTANT (rep_const) */        k[((5)-1)] = k6;
+31: /* MUTANT (del_stmt) */ /*         k[6] = k7; */ 
+31: /* MUTANT (rep_const) */        k[0] = k7;
+31: /* MUTANT (rep_const) */        k[1] = k7;
+31: /* MUTANT (rep_const) */        k[-1] = k7;
+31: /* MUTANT (rep_const) */        k[((6)+1)] = k7;
+31: /* MUTANT (rep_const) */        k[((6)-1)] = k7;
+32: /* MUTANT (del_stmt) */ /*         k[7] = k8; */ 
+32: /* MUTANT (rep_const) */        k[0] = k8;
+32: /* MUTANT (rep_const) */        k[1] = k8;
+32: /* MUTANT (rep_const) */        k[-1] = k8;
+32: /* MUTANT (rep_const) */        k[((7)+1)] = k8;
+32: /* MUTANT (rep_const) */        k[((7)-1)] = k8;
+33: /* MUTANT (del_stmt) */ /*         k[8] = k9; */ 
+33: /* MUTANT (rep_const) */        k[0] = k9;
+33: /* MUTANT (rep_const) */        k[1] = k9;
+33: /* MUTANT (rep_const) */        k[-1] = k9;
+33: /* MUTANT (rep_const) */        k[((8)+1)] = k9;
+33: /* MUTANT (rep_const) */        k[((8)-1)] = k9;
+34: /* MUTANT (del_stmt) */ /*         k[9] = k10; */ 
+34: /* MUTANT (rep_const) */        k[0] = k10;
+34: /* MUTANT (rep_const) */        k[1] = k10;
+34: /* MUTANT (rep_const) */        k[-1] = k10;
+34: /* MUTANT (rep_const) */        k[((9)+1)] = k10;
+34: /* MUTANT (rep_const) */        k[((9)-1)] = k10;
+35: /* MUTANT (del_stmt) */ /*         return k; */ 
+38: /* MUTANT (rep_const) */int initializeGame(int numPlayers, int kingdomCards[0], int randomSeed,
+38: /* MUTANT (rep_const) */int initializeGame(int numPlayers, int kingdomCards[1], int randomSeed,
+38: /* MUTANT (rep_const) */int initializeGame(int numPlayers, int kingdomCards[-1], int randomSeed,
+38: /* MUTANT (rep_const) */int initializeGame(int numPlayers, int kingdomCards[((10)+1)], int randomSeed,
+38: /* MUTANT (rep_const) */int initializeGame(int numPlayers, int kingdomCards[((10)-1)], int randomSeed,
+41: /* MUTANT (del_stmt) */ /*         int i; */ 
+42: /* MUTANT (del_stmt) */ /*         int j; */ 
+43: /* MUTANT (del_stmt) */ /*         int it; */ 
+45: /* MUTANT (del_stmt) */ /*         SelectStream(1); */ 
+45: /* MUTANT (rep_const) */        SelectStream(0);
+45: /* MUTANT (rep_const) */        SelectStream(-1);
+45: /* MUTANT (rep_const) */        SelectStream(((1)+1));
+46: /* MUTANT (del_stmt) */ /*         PutSeed((long)randomSeed); */ 
+49: /* MUTANT (rep_op) */        if (numPlayers <= MAX_PLAYERS || numPlayers < 2)
+49: /* MUTANT (rep_op) */        if (numPlayers < MAX_PLAYERS || numPlayers < 2)
+49: /* MUTANT (rep_op) */        if (numPlayers >= MAX_PLAYERS || numPlayers < 2)
+49: /* MUTANT (rep_op) */        if (numPlayers == MAX_PLAYERS || numPlayers < 2)
+49: /* MUTANT (rep_op) */        if (numPlayers != MAX_PLAYERS || numPlayers < 2)
+49: /* MUTANT (rep_op) */        if (numPlayers > MAX_PLAYERS && numPlayers < 2)
+49: /* MUTANT (rep_op) */        if (numPlayers > MAX_PLAYERS || numPlayers <= 2)
+49: /* MUTANT (rep_op) */        if (numPlayers > MAX_PLAYERS || numPlayers > 2)
+49: /* MUTANT (rep_op) */        if (numPlayers > MAX_PLAYERS || numPlayers >= 2)
+49: /* MUTANT (rep_op) */        if (numPlayers > MAX_PLAYERS || numPlayers == 2)
+49: /* MUTANT (rep_op) */        if (numPlayers > MAX_PLAYERS || numPlayers != 2)
+49: /* MUTANT (rep_const) */        if (numPlayers > MAX_PLAYERS || numPlayers < 0)
+49: /* MUTANT (rep_const) */        if (numPlayers > MAX_PLAYERS || numPlayers < 1)
+49: /* MUTANT (rep_const) */        if (numPlayers > MAX_PLAYERS || numPlayers < -1)
+49: /* MUTANT (rep_const) */        if (numPlayers > MAX_PLAYERS || numPlayers < ((2)+1))
+49: /* MUTANT (rep_const) */        if (numPlayers > MAX_PLAYERS || numPlayers < ((2)-1))
+49: /* MUTANT (negate) */        if(! (numPlayers > MAX_PLAYERS || numPlayers < 2))
+51: /* MUTANT (del_stmt) */ /*                 return -1; */ 
+51: /* MUTANT (rep_const) */                return 0;
+51: /* MUTANT (rep_const) */                return 1;
+51: /* MUTANT (rep_const) */                return ((-1)+1);
+51: /* MUTANT (rep_const) */                return ((-1)-1);
+58: /* MUTANT (rep_op) */        for (i = 0; i <= 10; i++)
+58: /* MUTANT (rep_op) */        for (i = 0; i > 10; i++)
+58: /* MUTANT (rep_op) */        for (i = 0; i >= 10; i++)
+58: /* MUTANT (rep_op) */        for (i = 0; i == 10; i++)
+58: /* MUTANT (rep_op) */        for (i = 0; i != 10; i++)
+58: /* MUTANT (rep_op) */        for (i = 0; i < 10; i--)
+58: /* MUTANT (rep_const) */        for (i = 1; i < 10; i++)
+58: /* MUTANT (rep_const) */        for (i = -1; i < 10; i++)
+58: /* MUTANT (rep_const) */        for (i = 0; i < 0; i++)
+58: /* MUTANT (rep_const) */        for (i = 0; i < 1; i++)
+58: /* MUTANT (rep_const) */        for (i = 0; i < -1; i++)
+58: /* MUTANT (rep_const) */        for (i = 0; i < ((10)+1); i++)
+58: /* MUTANT (rep_const) */        for (i = 0; i < ((10)-1); i++)
+60: /* MUTANT (rep_op) */                for (j = 0; j <= 10; j++)
+60: /* MUTANT (rep_op) */                for (j = 0; j > 10; j++)
+60: /* MUTANT (rep_op) */                for (j = 0; j >= 10; j++)
+60: /* MUTANT (rep_op) */                for (j = 0; j == 10; j++)
+60: /* MUTANT (rep_op) */                for (j = 0; j != 10; j++)
+60: /* MUTANT (rep_op) */                for (j = 0; j < 10; j--)
+60: /* MUTANT (rep_const) */                for (j = 1; j < 10; j++)
+60: /* MUTANT (rep_const) */                for (j = -1; j < 10; j++)
+60: /* MUTANT (rep_const) */                for (j = 0; j < 0; j++)
+60: /* MUTANT (rep_const) */                for (j = 0; j < 1; j++)
+60: /* MUTANT (rep_const) */                for (j = 0; j < -1; j++)
+60: /* MUTANT (rep_const) */                for (j = 0; j < ((10)+1); j++)
+60: /* MUTANT (rep_const) */                for (j = 0; j < ((10)-1); j++)
+62: /* MUTANT (rep_op) */                        if (j == i && kingdomCards[j] == kingdomCards[i])
+62: /* MUTANT (rep_op) */                        if (j != i || kingdomCards[j] == kingdomCards[i])
+62: /* MUTANT (rep_op) */                        if (j != i && kingdomCards[j] != kingdomCards[i])
+62: /* MUTANT (negate) */                        if(! (j != i && kingdomCards[j] == kingdomCards[i]))
+64: /* MUTANT (del_stmt) */ /*                                 return -1; */ 
+64: /* MUTANT (rep_const) */                                return 0;
+64: /* MUTANT (rep_const) */                                return 1;
+64: /* MUTANT (rep_const) */                                return ((-1)+1);
+64: /* MUTANT (rep_const) */                                return ((-1)-1);
+74: /* MUTANT (rep_op) */        if (numPlayers != 2)
+74: /* MUTANT (rep_const) */        if (numPlayers == 0)
+74: /* MUTANT (rep_const) */        if (numPlayers == 1)
+74: /* MUTANT (rep_const) */        if (numPlayers == -1)
+74: /* MUTANT (rep_const) */        if (numPlayers == ((2)+1))
+74: /* MUTANT (rep_const) */        if (numPlayers == ((2)-1))
+74: /* MUTANT (negate) */        if(! (numPlayers == 2))
+76: /* MUTANT (del_stmt) */ /*                 state->supplyCount[curse] = 10; */ 
+76: /* MUTANT (rep_const) */                state->supplyCount[curse] = 0;
+76: /* MUTANT (rep_const) */                state->supplyCount[curse] = 1;
+76: /* MUTANT (rep_const) */                state->supplyCount[curse] = -1;
+76: /* MUTANT (rep_const) */                state->supplyCount[curse] = ((10)+1);
+76: /* MUTANT (rep_const) */                state->supplyCount[curse] = ((10)-1);
+78: /* MUTANT (rep_op) */        else if (numPlayers != 3)
+78: /* MUTANT (rep_const) */        else if (numPlayers == 0)
+78: /* MUTANT (rep_const) */        else if (numPlayers == 1)
+78: /* MUTANT (rep_const) */        else if (numPlayers == -1)
+78: /* MUTANT (rep_const) */        else if (numPlayers == ((3)+1))
+78: /* MUTANT (rep_const) */        else if (numPlayers == ((3)-1))
+78: /* MUTANT (negate) */        else if(! (numPlayers == 3))
+80: /* MUTANT (del_stmt) */ /*                 state->supplyCount[curse] = 20; */ 
+80: /* MUTANT (rep_const) */                state->supplyCount[curse] = 0;
+80: /* MUTANT (rep_const) */                state->supplyCount[curse] = 1;
+80: /* MUTANT (rep_const) */                state->supplyCount[curse] = -1;
+80: /* MUTANT (rep_const) */                state->supplyCount[curse] = ((20)+1);
+80: /* MUTANT (rep_const) */                state->supplyCount[curse] = ((20)-1);
+84: /* MUTANT (del_stmt) */ /*                 state->supplyCount[curse] = 30; */ 
+84: /* MUTANT (rep_const) */                state->supplyCount[curse] = 0;
+84: /* MUTANT (rep_const) */                state->supplyCount[curse] = 1;
+84: /* MUTANT (rep_const) */                state->supplyCount[curse] = -1;
+84: /* MUTANT (rep_const) */                state->supplyCount[curse] = ((30)+1);
+84: /* MUTANT (rep_const) */                state->supplyCount[curse] = ((30)-1);
+88: /* MUTANT (rep_op) */        if (numPlayers != 2)
+88: /* MUTANT (rep_const) */        if (numPlayers == 0)
+88: /* MUTANT (rep_const) */        if (numPlayers == 1)
+88: /* MUTANT (rep_const) */        if (numPlayers == -1)
+88: /* MUTANT (rep_const) */        if (numPlayers == ((2)+1))
+88: /* MUTANT (rep_const) */        if (numPlayers == ((2)-1))
+88: /* MUTANT (negate) */        if(! (numPlayers == 2))
+90: /* MUTANT (del_stmt) */ /*                 state->supplyCount[estate] = 8; */ 
+90: /* MUTANT (rep_const) */                state->supplyCount[estate] = 0;
+90: /* MUTANT (rep_const) */                state->supplyCount[estate] = 1;
+90: /* MUTANT (rep_const) */                state->supplyCount[estate] = -1;
+90: /* MUTANT (rep_const) */                state->supplyCount[estate] = ((8)+1);
+90: /* MUTANT (rep_const) */                state->supplyCount[estate] = ((8)-1);
+91: /* MUTANT (del_stmt) */ /*                 state->supplyCount[duchy] = 8; */ 
+91: /* MUTANT (rep_const) */                state->supplyCount[duchy] = 0;
+91: /* MUTANT (rep_const) */                state->supplyCount[duchy] = 1;
+91: /* MUTANT (rep_const) */                state->supplyCount[duchy] = -1;
+91: /* MUTANT (rep_const) */                state->supplyCount[duchy] = ((8)+1);
+91: /* MUTANT (rep_const) */                state->supplyCount[duchy] = ((8)-1);
+92: /* MUTANT (del_stmt) */ /*                 state->supplyCount[province] = 8; */ 
+92: /* MUTANT (rep_const) */                state->supplyCount[province] = 0;
+92: /* MUTANT (rep_const) */                state->supplyCount[province] = 1;
+92: /* MUTANT (rep_const) */                state->supplyCount[province] = -1;
+92: /* MUTANT (rep_const) */                state->supplyCount[province] = ((8)+1);
+92: /* MUTANT (rep_const) */                state->supplyCount[province] = ((8)-1);
+96: /* MUTANT (del_stmt) */ /*                 state->supplyCount[estate] = 12; */ 
+96: /* MUTANT (rep_const) */                state->supplyCount[estate] = 0;
+96: /* MUTANT (rep_const) */                state->supplyCount[estate] = 1;
+96: /* MUTANT (rep_const) */                state->supplyCount[estate] = -1;
+96: /* MUTANT (rep_const) */                state->supplyCount[estate] = ((12)+1);
+96: /* MUTANT (rep_const) */                state->supplyCount[estate] = ((12)-1);
+97: /* MUTANT (del_stmt) */ /*                 state->supplyCount[duchy] = 12; */ 
+97: /* MUTANT (rep_const) */                state->supplyCount[duchy] = 0;
+97: /* MUTANT (rep_const) */                state->supplyCount[duchy] = 1;
+97: /* MUTANT (rep_const) */                state->supplyCount[duchy] = -1;
+97: /* MUTANT (rep_const) */                state->supplyCount[duchy] = ((12)+1);
+97: /* MUTANT (rep_const) */                state->supplyCount[duchy] = ((12)-1);
+98: /* MUTANT (del_stmt) */ /*                 state->supplyCount[province] = 12; */ 
+98: /* MUTANT (rep_const) */                state->supplyCount[province] = 0;
+98: /* MUTANT (rep_const) */                state->supplyCount[province] = 1;
+98: /* MUTANT (rep_const) */                state->supplyCount[province] = -1;
+98: /* MUTANT (rep_const) */                state->supplyCount[province] = ((12)+1);
+98: /* MUTANT (rep_const) */                state->supplyCount[province] = ((12)-1);
+102: /* MUTANT (rep_const) */        state->supplyCount[copper] = 0 - (7 * numPlayers);
+102: /* MUTANT (rep_const) */        state->supplyCount[copper] = 1 - (7 * numPlayers);
+102: /* MUTANT (rep_const) */        state->supplyCount[copper] = -1 - (7 * numPlayers);
+102: /* MUTANT (rep_const) */        state->supplyCount[copper] = ((60)+1) - (7 * numPlayers);
+102: /* MUTANT (rep_const) */        state->supplyCount[copper] = ((60)-1) - (7 * numPlayers);
+102: /* MUTANT (rep_const) */        state->supplyCount[copper] = 60 - (0 * numPlayers);
+102: /* MUTANT (rep_const) */        state->supplyCount[copper] = 60 - (1 * numPlayers);
+102: /* MUTANT (rep_const) */        state->supplyCount[copper] = 60 - (-1 * numPlayers);
+102: /* MUTANT (rep_const) */        state->supplyCount[copper] = 60 - (((7)+1) * numPlayers);
+102: /* MUTANT (rep_const) */        state->supplyCount[copper] = 60 - (((7)-1) * numPlayers);
+103: /* MUTANT (del_stmt) */ /*         state->supplyCount[silver] = 40; */ 
+103: /* MUTANT (rep_const) */        state->supplyCount[silver] = 0;
+103: /* MUTANT (rep_const) */        state->supplyCount[silver] = 1;
+103: /* MUTANT (rep_const) */        state->supplyCount[silver] = -1;
+103: /* MUTANT (rep_const) */        state->supplyCount[silver] = ((40)+1);
+103: /* MUTANT (rep_const) */        state->supplyCount[silver] = ((40)-1);
+104: /* MUTANT (del_stmt) */ /*         state->supplyCount[gold] = 30; */ 
+104: /* MUTANT (rep_const) */        state->supplyCount[gold] = 0;
+104: /* MUTANT (rep_const) */        state->supplyCount[gold] = 1;
+104: /* MUTANT (rep_const) */        state->supplyCount[gold] = -1;
+104: /* MUTANT (rep_const) */        state->supplyCount[gold] = ((30)+1);
+104: /* MUTANT (rep_const) */        state->supplyCount[gold] = ((30)-1);
+107: /* MUTANT (rep_op) */        for (i = adventurer; i < treasure_map; i++)  //loop all cards
+107: /* MUTANT (rep_op) */        for (i = adventurer; i > treasure_map; i++)  //loop all cards
+107: /* MUTANT (rep_op) */        for (i = adventurer; i >= treasure_map; i++)  //loop all cards
+107: /* MUTANT (rep_op) */        for (i = adventurer; i == treasure_map; i++)  //loop all cards
+107: /* MUTANT (rep_op) */        for (i = adventurer; i != treasure_map; i++)  //loop all cards
+107: /* MUTANT (rep_op) */        for (i = adventurer; i <= treasure_map; i--)  //loop all cards
+109: /* MUTANT (rep_op) */                for (j = 0; j <= 10; j++)    //loop chosen cards
+109: /* MUTANT (rep_op) */                for (j = 0; j > 10; j++)    //loop chosen cards
+109: /* MUTANT (rep_op) */                for (j = 0; j >= 10; j++)    //loop chosen cards
+109: /* MUTANT (rep_op) */                for (j = 0; j == 10; j++)    //loop chosen cards
+109: /* MUTANT (rep_op) */                for (j = 0; j != 10; j++)    //loop chosen cards
+109: /* MUTANT (rep_op) */                for (j = 0; j < 10; j--)    //loop chosen cards
+109: /* MUTANT (rep_const) */                for (j = 1; j < 10; j++)    //loop chosen cards
+109: /* MUTANT (rep_const) */                for (j = -1; j < 10; j++)    //loop chosen cards
+109: /* MUTANT (rep_const) */                for (j = 0; j < 0; j++)    //loop chosen cards
+109: /* MUTANT (rep_const) */                for (j = 0; j < 1; j++)    //loop chosen cards
+109: /* MUTANT (rep_const) */                for (j = 0; j < -1; j++)    //loop chosen cards
+109: /* MUTANT (rep_const) */                for (j = 0; j < ((10)+1); j++)    //loop chosen cards
+109: /* MUTANT (rep_const) */                for (j = 0; j < ((10)-1); j++)    //loop chosen cards
+111: /* MUTANT (rep_op) */                        if (kingdomCards[j] != i)
+111: /* MUTANT (negate) */                        if(! (kingdomCards[j] == i))
+114: /* MUTANT (rep_op) */                                if (kingdomCards[j] != great_hall || kingdomCards[j] == gardens)
+114: /* MUTANT (rep_op) */                                if (kingdomCards[j] == great_hall && kingdomCards[j] == gardens)
+114: /* MUTANT (rep_op) */                                if (kingdomCards[j] == great_hall || kingdomCards[j] != gardens)
+114: /* MUTANT (negate) */                                if(! (kingdomCards[j] == great_hall || kingdomCards[j] == gardens))
+116: /* MUTANT (rep_op) */                                        if (numPlayers != 2) {
+116: /* MUTANT (rep_const) */                                        if (numPlayers == 0) {
+116: /* MUTANT (rep_const) */                                        if (numPlayers == 1) {
+116: /* MUTANT (rep_const) */                                        if (numPlayers == -1) {
+116: /* MUTANT (rep_const) */                                        if (numPlayers == ((2)+1)) {
+116: /* MUTANT (rep_const) */                                        if (numPlayers == ((2)-1)) {
+116: /* MUTANT (negate) */                                        if(! (numPlayers == 2)) {
+117: /* MUTANT (del_stmt) */ /*                                                 state->supplyCount[i] = 8; */ 
+117: /* MUTANT (rep_const) */                                                state->supplyCount[i] = 0;
+117: /* MUTANT (rep_const) */                                                state->supplyCount[i] = 1;
+117: /* MUTANT (rep_const) */                                                state->supplyCount[i] = -1;
+117: /* MUTANT (rep_const) */                                                state->supplyCount[i] = ((8)+1);
+117: /* MUTANT (rep_const) */                                                state->supplyCount[i] = ((8)-1);
+119: /* MUTANT (rep_const) */                                        else{ state->supplyCount[i] = 0; }
+119: /* MUTANT (rep_const) */                                        else{ state->supplyCount[i] = 1; }
+119: /* MUTANT (rep_const) */                                        else{ state->supplyCount[i] = -1; }
+119: /* MUTANT (rep_const) */                                        else{ state->supplyCount[i] = ((12)+1); }
+119: /* MUTANT (rep_const) */                                        else{ state->supplyCount[i] = ((12)-1); }
+123: /* MUTANT (del_stmt) */ /*                                         state->supplyCount[i] = 10; */ 
+123: /* MUTANT (rep_const) */                                        state->supplyCount[i] = 0;
+123: /* MUTANT (rep_const) */                                        state->supplyCount[i] = 1;
+123: /* MUTANT (rep_const) */                                        state->supplyCount[i] = -1;
+123: /* MUTANT (rep_const) */                                        state->supplyCount[i] = ((10)+1);
+123: /* MUTANT (rep_const) */                                        state->supplyCount[i] = ((10)-1);
+129: /* MUTANT (del_stmt) */ /*                                 state->supplyCount[i] = -1; */ 
+129: /* MUTANT (rep_const) */                                state->supplyCount[i] = 0;
+129: /* MUTANT (rep_const) */                                state->supplyCount[i] = 1;
+129: /* MUTANT (rep_const) */                                state->supplyCount[i] = ((-1)+1);
+129: /* MUTANT (rep_const) */                                state->supplyCount[i] = ((-1)-1);
+139: /* MUTANT (rep_op) */        for (i = 0; i <= numPlayers; i++)
+139: /* MUTANT (rep_op) */        for (i = 0; i > numPlayers; i++)
+139: /* MUTANT (rep_op) */        for (i = 0; i >= numPlayers; i++)
+139: /* MUTANT (rep_op) */        for (i = 0; i == numPlayers; i++)
+139: /* MUTANT (rep_op) */        for (i = 0; i != numPlayers; i++)
+139: /* MUTANT (rep_op) */        for (i = 0; i < numPlayers; i--)
+139: /* MUTANT (rep_const) */        for (i = 1; i < numPlayers; i++)
+139: /* MUTANT (rep_const) */        for (i = -1; i < numPlayers; i++)
+141: /* MUTANT (del_stmt) */ /*                 state->deckCount[i] = 0; */ 
+141: /* MUTANT (rep_const) */                state->deckCount[i] = 1;
+141: /* MUTANT (rep_const) */                state->deckCount[i] = -1;
+142: /* MUTANT (rep_op) */                for (j = 0; j <= 3; j++)
+142: /* MUTANT (rep_op) */                for (j = 0; j > 3; j++)
+142: /* MUTANT (rep_op) */                for (j = 0; j >= 3; j++)
+142: /* MUTANT (rep_op) */                for (j = 0; j == 3; j++)
+142: /* MUTANT (rep_op) */                for (j = 0; j != 3; j++)
+142: /* MUTANT (rep_op) */                for (j = 0; j < 3; j--)
+142: /* MUTANT (rep_const) */                for (j = 1; j < 3; j++)
+142: /* MUTANT (rep_const) */                for (j = -1; j < 3; j++)
+142: /* MUTANT (rep_const) */                for (j = 0; j < 0; j++)
+142: /* MUTANT (rep_const) */                for (j = 0; j < 1; j++)
+142: /* MUTANT (rep_const) */                for (j = 0; j < -1; j++)
+142: /* MUTANT (rep_const) */                for (j = 0; j < ((3)+1); j++)
+142: /* MUTANT (rep_const) */                for (j = 0; j < ((3)-1); j++)
+144: /* MUTANT (del_stmt) */ /*                         state->deck[i][j] = estate; */ 
+145: /* MUTANT (del_stmt) */ /*                         state->deckCount[i]++; */ 
+145: /* MUTANT (rep_op) */                        state->deckCount[i]--;
+147: /* MUTANT (rep_op) */                for (j = 3; j <= 10; j++)
+147: /* MUTANT (rep_op) */                for (j = 3; j > 10; j++)
+147: /* MUTANT (rep_op) */                for (j = 3; j >= 10; j++)
+147: /* MUTANT (rep_op) */                for (j = 3; j == 10; j++)
+147: /* MUTANT (rep_op) */                for (j = 3; j != 10; j++)
+147: /* MUTANT (rep_op) */                for (j = 3; j < 10; j--)
+147: /* MUTANT (rep_const) */                for (j = 0; j < 10; j++)
+147: /* MUTANT (rep_const) */                for (j = 1; j < 10; j++)
+147: /* MUTANT (rep_const) */                for (j = -1; j < 10; j++)
+147: /* MUTANT (rep_const) */                for (j = ((3)+1); j < 10; j++)
+147: /* MUTANT (rep_const) */                for (j = ((3)-1); j < 10; j++)
+147: /* MUTANT (rep_const) */                for (j = 3; j < 0; j++)
+147: /* MUTANT (rep_const) */                for (j = 3; j < 1; j++)
+147: /* MUTANT (rep_const) */                for (j = 3; j < -1; j++)
+147: /* MUTANT (rep_const) */                for (j = 3; j < ((10)+1); j++)
+147: /* MUTANT (rep_const) */                for (j = 3; j < ((10)-1); j++)
+149: /* MUTANT (del_stmt) */ /*                         state->deck[i][j] = copper; */ 
+150: /* MUTANT (del_stmt) */ /*                         state->deckCount[i]++; */ 
+150: /* MUTANT (rep_op) */                        state->deckCount[i]--;
+155: /* MUTANT (rep_op) */        for (i = 0; i <= numPlayers; i++)
+155: /* MUTANT (rep_op) */        for (i = 0; i > numPlayers; i++)
+155: /* MUTANT (rep_op) */        for (i = 0; i >= numPlayers; i++)
+155: /* MUTANT (rep_op) */        for (i = 0; i == numPlayers; i++)
+155: /* MUTANT (rep_op) */        for (i = 0; i != numPlayers; i++)
+155: /* MUTANT (rep_op) */        for (i = 0; i < numPlayers; i--)
+155: /* MUTANT (rep_const) */        for (i = 1; i < numPlayers; i++)
+155: /* MUTANT (rep_const) */        for (i = -1; i < numPlayers; i++)
+157: /* MUTANT (rep_op) */                if ( shuffle(i, state) <= 0 )
+157: /* MUTANT (rep_op) */                if ( shuffle(i, state) > 0 )
+157: /* MUTANT (rep_op) */                if ( shuffle(i, state) >= 0 )
+157: /* MUTANT (rep_op) */                if ( shuffle(i, state) == 0 )
+157: /* MUTANT (rep_op) */                if ( shuffle(i, state) != 0 )
+157: /* MUTANT (rep_const) */                if ( shuffle(i, state) < 1 )
+157: /* MUTANT (rep_const) */                if ( shuffle(i, state) < -1 )
+157: /* MUTANT (negate) */                if(! ( shuffle(i, state) < 0 ))
+159: /* MUTANT (del_stmt) */ /*                         return -1; */ 
+159: /* MUTANT (rep_const) */                        return 0;
+159: /* MUTANT (rep_const) */                        return 1;
+159: /* MUTANT (rep_const) */                        return ((-1)+1);
+159: /* MUTANT (rep_const) */                        return ((-1)-1);
+164: /* MUTANT (rep_op) */        for (i = 0; i <= numPlayers; i++)
+164: /* MUTANT (rep_op) */        for (i = 0; i > numPlayers; i++)
+164: /* MUTANT (rep_op) */        for (i = 0; i >= numPlayers; i++)
+164: /* MUTANT (rep_op) */        for (i = 0; i == numPlayers; i++)
+164: /* MUTANT (rep_op) */        for (i = 0; i != numPlayers; i++)
+164: /* MUTANT (rep_op) */        for (i = 0; i < numPlayers; i--)
+164: /* MUTANT (rep_const) */        for (i = 1; i < numPlayers; i++)
+164: /* MUTANT (rep_const) */        for (i = -1; i < numPlayers; i++)
+167: /* MUTANT (del_stmt) */ /*                 state->handCount[i] = 0; */ 
+167: /* MUTANT (rep_const) */                state->handCount[i] = 1;
+167: /* MUTANT (rep_const) */                state->handCount[i] = -1;
+168: /* MUTANT (del_stmt) */ /*                 state->discardCount[i] = 0; */ 
+168: /* MUTANT (rep_const) */                state->discardCount[i] = 1;
+168: /* MUTANT (rep_const) */                state->discardCount[i] = -1;
+177: /* MUTANT (rep_op) */        for (i = 0; i < treasure_map; i++)
+177: /* MUTANT (rep_op) */        for (i = 0; i > treasure_map; i++)
+177: /* MUTANT (rep_op) */        for (i = 0; i >= treasure_map; i++)
+177: /* MUTANT (rep_op) */        for (i = 0; i == treasure_map; i++)
+177: /* MUTANT (rep_op) */        for (i = 0; i != treasure_map; i++)
+177: /* MUTANT (rep_op) */        for (i = 0; i <= treasure_map; i--)
+177: /* MUTANT (rep_const) */        for (i = 1; i <= treasure_map; i++)
+177: /* MUTANT (rep_const) */        for (i = -1; i <= treasure_map; i++)
+179: /* MUTANT (del_stmt) */ /*                 state->embargoTokens[i] = 0; */ 
+179: /* MUTANT (rep_const) */                state->embargoTokens[i] = 1;
+179: /* MUTANT (rep_const) */                state->embargoTokens[i] = -1;
+183: /* MUTANT (rep_const) */        state->outpostPlayed = 1;
+183: /* MUTANT (rep_const) */        state->outpostPlayed = -1;
+184: /* MUTANT (del_stmt) */ /*         state->phase = 0; */ 
+184: /* MUTANT (rep_const) */        state->phase = 1;
+184: /* MUTANT (rep_const) */        state->phase = -1;
+185: /* MUTANT (del_stmt) */ /*         state->numActions = 1; */ 
+185: /* MUTANT (rep_const) */        state->numActions = 0;
+185: /* MUTANT (rep_const) */        state->numActions = -1;
+185: /* MUTANT (rep_const) */        state->numActions = ((1)+1);
+186: /* MUTANT (del_stmt) */ /*         state->numBuys = 1; */ 
+186: /* MUTANT (rep_const) */        state->numBuys = 0;
+186: /* MUTANT (rep_const) */        state->numBuys = -1;
+186: /* MUTANT (rep_const) */        state->numBuys = ((1)+1);
+187: /* MUTANT (del_stmt) */ /*         state->playedCardCount = 0; */ 
+187: /* MUTANT (rep_const) */        state->playedCardCount = 1;
+187: /* MUTANT (rep_const) */        state->playedCardCount = -1;
+188: /* MUTANT (del_stmt) */ /*         state->whoseTurn = 0; */ 
+188: /* MUTANT (rep_const) */        state->whoseTurn = 1;
+188: /* MUTANT (rep_const) */        state->whoseTurn = -1;
+189: /* MUTANT (del_stmt) */ /*         state->handCount[state->whoseTurn] = 0; */ 
+189: /* MUTANT (rep_const) */        state->handCount[state->whoseTurn] = 1;
+189: /* MUTANT (rep_const) */        state->handCount[state->whoseTurn] = -1;
+193: /* MUTANT (rep_op) */        for (it = 0; it <= 5; it++) {
+193: /* MUTANT (rep_op) */        for (it = 0; it > 5; it++) {
+193: /* MUTANT (rep_op) */        for (it = 0; it >= 5; it++) {
+193: /* MUTANT (rep_op) */        for (it = 0; it == 5; it++) {
+193: /* MUTANT (rep_op) */        for (it = 0; it != 5; it++) {
+193: /* MUTANT (rep_op) */        for (it = 0; it < 5; it--) {
+193: /* MUTANT (rep_const) */        for (it = 1; it < 5; it++) {
+193: /* MUTANT (rep_const) */        for (it = -1; it < 5; it++) {
+193: /* MUTANT (rep_const) */        for (it = 0; it < 0; it++) {
+193: /* MUTANT (rep_const) */        for (it = 0; it < 1; it++) {
+193: /* MUTANT (rep_const) */        for (it = 0; it < -1; it++) {
+193: /* MUTANT (rep_const) */        for (it = 0; it < ((5)+1); it++) {
+193: /* MUTANT (rep_const) */        for (it = 0; it < ((5)-1); it++) {
+194: /* MUTANT (del_stmt) */ /*                 drawCard(state->whoseTurn, state); */ 
+197: /* MUTANT (rep_const) */        updateCoins(state->whoseTurn, state, 1);
+197: /* MUTANT (rep_const) */        updateCoins(state->whoseTurn, state, -1);
+199: /* MUTANT (del_stmt) */ /*         return 0; */ 
+199: /* MUTANT (rep_const) */        return 1;
+199: /* MUTANT (rep_const) */        return -1;
+205: /* MUTANT (del_stmt) */ /*         int newDeck[MAX_DECK]; */ 
+206: /* MUTANT (del_stmt) */ /*         int newDeckPos = 0; */ 
+206: /* MUTANT (rep_const) */        int newDeckPos = 1;
+206: /* MUTANT (rep_const) */        int newDeckPos = -1;
+207: /* MUTANT (del_stmt) */ /*         int card; */ 
+208: /* MUTANT (del_stmt) */ /*         int i; */ 
+210: /* MUTANT (rep_op) */        if (state->deckCount[player] <= 1)
+210: /* MUTANT (rep_op) */        if (state->deckCount[player] > 1)
+210: /* MUTANT (rep_op) */        if (state->deckCount[player] >= 1)
+210: /* MUTANT (rep_op) */        if (state->deckCount[player] == 1)
+210: /* MUTANT (rep_op) */        if (state->deckCount[player] != 1)
+210: /* MUTANT (rep_const) */        if (state->deckCount[player] < 0)
+210: /* MUTANT (rep_const) */        if (state->deckCount[player] < -1)
+210: /* MUTANT (rep_const) */        if (state->deckCount[player] < ((1)+1))
+210: /* MUTANT (negate) */        if(! (state->deckCount[player] < 1))
+211: /* MUTANT (rep_const) */                return 0;
+211: /* MUTANT (rep_const) */                return 1;
+211: /* MUTANT (rep_const) */                return ((-1)+1);
+211: /* MUTANT (rep_const) */                return ((-1)-1);
+212: /* MUTANT (del_stmt) */ /*         qsort ((void*)(state->deck[player]), state->deckCount[player], sizeof(int), compare); */ 
+215: /* MUTANT (rep_op) */        while (state->deckCount[player] <= 0) {
+215: /* MUTANT (rep_op) */        while (state->deckCount[player] < 0) {
+215: /* MUTANT (rep_op) */        while (state->deckCount[player] >= 0) {
+215: /* MUTANT (rep_op) */        while (state->deckCount[player] == 0) {
+215: /* MUTANT (rep_op) */        while (state->deckCount[player] != 0) {
+215: /* MUTANT (rep_const) */        while (state->deckCount[player] > 1) {
+215: /* MUTANT (rep_const) */        while (state->deckCount[player] > -1) {
+215: /* MUTANT (negate) */        while(! (state->deckCount[player] > 0)) {
+216: /* MUTANT (del_stmt) */ /*                 card = floor(Random() * state->deckCount[player]); */ 
+217: /* MUTANT (del_stmt) */ /*                 newDeck[newDeckPos] = state->deck[player][card]; */ 
+218: /* MUTANT (del_stmt) */ /*                 newDeckPos++; */ 
+218: /* MUTANT (rep_op) */                newDeckPos--;
+219: /* MUTANT (rep_op) */                for (i = card; i <= state->deckCount[player]-1; i++) {
+219: /* MUTANT (rep_op) */                for (i = card; i > state->deckCount[player]-1; i++) {
+219: /* MUTANT (rep_op) */                for (i = card; i >= state->deckCount[player]-1; i++) {
+219: /* MUTANT (rep_op) */                for (i = card; i == state->deckCount[player]-1; i++) {
+219: /* MUTANT (rep_op) */                for (i = card; i != state->deckCount[player]-1; i++) {
+219: /* MUTANT (rep_op) */                for (i = card; i < state->deckCount[player]-1; i--) {
+219: /* MUTANT (rep_const) */                for (i = card; i < state->deckCount[player]0; i++) {
+219: /* MUTANT (rep_const) */                for (i = card; i < state->deckCount[player]1; i++) {
+219: /* MUTANT (rep_const) */                for (i = card; i < state->deckCount[player]((-1)+1); i++) {
+219: /* MUTANT (rep_const) */                for (i = card; i < state->deckCount[player]((-1)-1); i++) {
+220: /* MUTANT (del_stmt) */ /*                         state->deck[player][i] = state->deck[player][i+1]; */ 
+220: /* MUTANT (rep_op) */                        state->deck[player][i] = state->deck[player][i-1];
+220: /* MUTANT (rep_op) */                        state->deck[player][i] = state->deck[player][i*1];
+220: /* MUTANT (rep_op) */                        state->deck[player][i] = state->deck[player][i%1];
+220: /* MUTANT (rep_const) */                        state->deck[player][i] = state->deck[player][i+0];
+220: /* MUTANT (rep_const) */                        state->deck[player][i] = state->deck[player][i+-1];
+220: /* MUTANT (rep_const) */                        state->deck[player][i] = state->deck[player][i+((1)+1)];
+222: /* MUTANT (rep_op) */                state->deckCount[player]++;
+224: /* MUTANT (rep_op) */        for (i = 0; i <= newDeckPos; i++) {
+224: /* MUTANT (rep_op) */        for (i = 0; i > newDeckPos; i++) {
+224: /* MUTANT (rep_op) */        for (i = 0; i >= newDeckPos; i++) {
+224: /* MUTANT (rep_op) */        for (i = 0; i == newDeckPos; i++) {
+224: /* MUTANT (rep_op) */        for (i = 0; i != newDeckPos; i++) {
+224: /* MUTANT (rep_op) */        for (i = 0; i < newDeckPos; i--) {
+224: /* MUTANT (rep_const) */        for (i = 1; i < newDeckPos; i++) {
+224: /* MUTANT (rep_const) */        for (i = -1; i < newDeckPos; i++) {
+225: /* MUTANT (del_stmt) */ /*                 state->deck[player][i] = newDeck[i]; */ 
+226: /* MUTANT (del_stmt) */ /*                 state->deckCount[player]++; */ 
+226: /* MUTANT (rep_op) */                state->deckCount[player]--;
+229: /* MUTANT (rep_const) */        return 1;
+229: /* MUTANT (rep_const) */        return -1;
+234: /* MUTANT (del_stmt) */ /*         int card; */ 
+235: /* MUTANT (del_stmt) */ /*         int coin_bonus = 0; */  //tracks coins gain from actions
+235: /* MUTANT (rep_const) */        int coin_bonus = 1; //tracks coins gain from actions
+235: /* MUTANT (rep_const) */        int coin_bonus = -1; //tracks coins gain from actions
+238: /* MUTANT (rep_op) */        if (state->phase == 0)
+238: /* MUTANT (rep_const) */        if (state->phase != 1)
+238: /* MUTANT (rep_const) */        if (state->phase != -1)
+238: /* MUTANT (negate) */        if(! (state->phase != 0))
+240: /* MUTANT (del_stmt) */ /*                 return -1; */ 
+240: /* MUTANT (rep_const) */                return 0;
+240: /* MUTANT (rep_const) */                return 1;
+240: /* MUTANT (rep_const) */                return ((-1)+1);
+240: /* MUTANT (rep_const) */                return ((-1)-1);
+244: /* MUTANT (rep_op) */        if ( state->numActions <= 1 )
+244: /* MUTANT (rep_op) */        if ( state->numActions > 1 )
+244: /* MUTANT (rep_op) */        if ( state->numActions >= 1 )
+244: /* MUTANT (rep_op) */        if ( state->numActions == 1 )
+244: /* MUTANT (rep_op) */        if ( state->numActions != 1 )
+244: /* MUTANT (rep_const) */        if ( state->numActions < 0 )
+244: /* MUTANT (rep_const) */        if ( state->numActions < -1 )
+244: /* MUTANT (rep_const) */        if ( state->numActions < ((1)+1) )
+244: /* MUTANT (negate) */        if(! ( state->numActions < 1 ))
+246: /* MUTANT (del_stmt) */ /*                 return -1; */ 
+246: /* MUTANT (rep_const) */                return 0;
+246: /* MUTANT (rep_const) */                return 1;
+246: /* MUTANT (rep_const) */                return ((-1)+1);
+246: /* MUTANT (rep_const) */                return ((-1)-1);
+253: /* MUTANT (rep_op) */        if ( card <= adventurer || card > treasure_map )
+253: /* MUTANT (rep_op) */        if ( card > adventurer || card > treasure_map )
+253: /* MUTANT (rep_op) */        if ( card >= adventurer || card > treasure_map )
+253: /* MUTANT (rep_op) */        if ( card == adventurer || card > treasure_map )
+253: /* MUTANT (rep_op) */        if ( card != adventurer || card > treasure_map )
+253: /* MUTANT (rep_op) */        if ( card < adventurer && card > treasure_map )
+253: /* MUTANT (rep_op) */        if ( card < adventurer || card <= treasure_map )
+253: /* MUTANT (rep_op) */        if ( card < adventurer || card < treasure_map )
+253: /* MUTANT (rep_op) */        if ( card < adventurer || card >= treasure_map )
+253: /* MUTANT (rep_op) */        if ( card < adventurer || card == treasure_map )
+253: /* MUTANT (rep_op) */        if ( card < adventurer || card != treasure_map )
+253: /* MUTANT (negate) */        if(! ( card < adventurer || card > treasure_map ))
+255: /* MUTANT (del_stmt) */ /*                 return -1; */ 
+255: /* MUTANT (rep_const) */                return 0;
+255: /* MUTANT (rep_const) */                return 1;
+255: /* MUTANT (rep_const) */                return ((-1)+1);
+255: /* MUTANT (rep_const) */                return ((-1)-1);
+259: /* MUTANT (rep_op) */        if ( cardEffect(card, choice1, choice2, choice3, state, handPos, &coin_bonus) <= 0 )
+259: /* MUTANT (rep_op) */        if ( cardEffect(card, choice1, choice2, choice3, state, handPos, &coin_bonus) > 0 )
+259: /* MUTANT (rep_op) */        if ( cardEffect(card, choice1, choice2, choice3, state, handPos, &coin_bonus) >= 0 )
+259: /* MUTANT (rep_op) */        if ( cardEffect(card, choice1, choice2, choice3, state, handPos, &coin_bonus) == 0 )
+259: /* MUTANT (rep_op) */        if ( cardEffect(card, choice1, choice2, choice3, state, handPos, &coin_bonus) != 0 )
+259: /* MUTANT (rep_const) */        if ( cardEffect(card, choice1, choice2, choice3, state, handPos, &coin_bonus) < 1 )
+259: /* MUTANT (rep_const) */        if ( cardEffect(card, choice1, choice2, choice3, state, handPos, &coin_bonus) < -1 )
+259: /* MUTANT (negate) */        if(! ( cardEffect(card, choice1, choice2, choice3, state, handPos, &coin_bonus) < 0 ))
+261: /* MUTANT (del_stmt) */ /*                 return -1; */ 
+261: /* MUTANT (rep_const) */                return 0;
+261: /* MUTANT (rep_const) */                return 1;
+261: /* MUTANT (rep_const) */                return ((-1)+1);
+261: /* MUTANT (rep_const) */                return ((-1)-1);
+265: /* MUTANT (rep_op) */        state->numActions++;
+268: /* MUTANT (del_stmt) */ /*         updateCoins(state->whoseTurn, state, coin_bonus); */ 
+270: /* MUTANT (del_stmt) */ /*         return 0; */ 
+270: /* MUTANT (rep_const) */        return 1;
+270: /* MUTANT (rep_const) */        return -1;
+274: /* MUTANT (del_stmt) */ /*         int who; */ 
+275: /* MUTANT (negate) */        if(! (DEBUG)) {
+276: /* MUTANT (del_stmt) */ /*                 printf("Entering buyCard...\n"); */ 
+283: /* MUTANT (rep_op) */        if (state->numBuys <= 1) {
+283: /* MUTANT (rep_op) */        if (state->numBuys > 1) {
+283: /* MUTANT (rep_op) */        if (state->numBuys >= 1) {
+283: /* MUTANT (rep_op) */        if (state->numBuys == 1) {
+283: /* MUTANT (rep_op) */        if (state->numBuys != 1) {
+283: /* MUTANT (rep_const) */        if (state->numBuys < 0) {
+283: /* MUTANT (rep_const) */        if (state->numBuys < -1) {
+283: /* MUTANT (rep_const) */        if (state->numBuys < ((1)+1)) {
+283: /* MUTANT (negate) */        if(! (state->numBuys < 1)) {
+284: /* MUTANT (negate) */                if(! (DEBUG))
+286: /* MUTANT (del_stmt) */ /*                 return -1; */ 
+286: /* MUTANT (rep_const) */                return 0;
+286: /* MUTANT (rep_const) */                return 1;
+286: /* MUTANT (rep_const) */                return ((-1)+1);
+286: /* MUTANT (rep_const) */                return ((-1)-1);
+287: /* MUTANT (rep_op) */        } else if (supplyCount(supplyPos, state) <=1) {
+287: /* MUTANT (rep_op) */        } else if (supplyCount(supplyPos, state) >1) {
+287: /* MUTANT (rep_op) */        } else if (supplyCount(supplyPos, state) >=1) {
+287: /* MUTANT (rep_op) */        } else if (supplyCount(supplyPos, state) ==1) {
+287: /* MUTANT (rep_op) */        } else if (supplyCount(supplyPos, state) !=1) {
+287: /* MUTANT (rep_const) */        } else if (supplyCount(supplyPos, state) <0) {
+287: /* MUTANT (rep_const) */        } else if (supplyCount(supplyPos, state) <-1) {
+287: /* MUTANT (rep_const) */        } else if (supplyCount(supplyPos, state) <((1)+1)) {
+287: /* MUTANT (negate) */        } else if(! (supplyCount(supplyPos, state) <1)) {
+288: /* MUTANT (negate) */                if(! (DEBUG))
+290: /* MUTANT (del_stmt) */ /*                 return -1; */ 
+290: /* MUTANT (rep_const) */                return 0;
+290: /* MUTANT (rep_const) */                return 1;
+290: /* MUTANT (rep_const) */                return ((-1)+1);
+290: /* MUTANT (rep_const) */                return ((-1)-1);
+291: /* MUTANT (rep_op) */        } else if (state->coins <= getCost(supplyPos)) {
+291: /* MUTANT (rep_op) */        } else if (state->coins > getCost(supplyPos)) {
+291: /* MUTANT (rep_op) */        } else if (state->coins >= getCost(supplyPos)) {
+291: /* MUTANT (rep_op) */        } else if (state->coins == getCost(supplyPos)) {
+291: /* MUTANT (rep_op) */        } else if (state->coins != getCost(supplyPos)) {
+291: /* MUTANT (negate) */        } else if(! (state->coins < getCost(supplyPos))) {
+292: /* MUTANT (negate) */                if(! (DEBUG))
+294: /* MUTANT (del_stmt) */ /*                 return -1; */ 
+294: /* MUTANT (rep_const) */                return 0;
+294: /* MUTANT (rep_const) */                return 1;
+294: /* MUTANT (rep_const) */                return ((-1)+1);
+294: /* MUTANT (rep_const) */                return ((-1)-1);
+296: /* MUTANT (del_stmt) */ /*                 state->phase=1; */ 
+296: /* MUTANT (rep_const) */                state->phase=0;
+296: /* MUTANT (rep_const) */                state->phase=-1;
+296: /* MUTANT (rep_const) */                state->phase=((1)+1);
+298: /* MUTANT (del_stmt) */ /*                 gainCard(supplyPos, state, 0, who); */  //card goes in discard, this might be wrong.. (2 means goes into hand, 0 goes into discard)
+298: /* MUTANT (rep_const) */                gainCard(supplyPos, state, 1, who); //card goes in discard, this might be wrong.. (2 means goes into hand, 0 goes into discard)
+298: /* MUTANT (rep_const) */                gainCard(supplyPos, state, -1, who); //card goes in discard, this might be wrong.. (2 means goes into hand, 0 goes into discard)
+300: /* MUTANT (del_stmt) */ /*                 state->coins = (state->coins) - (getCost(supplyPos)); */ 
+301: /* MUTANT (del_stmt) */ /*                 state->numBuys--; */ 
+301: /* MUTANT (rep_op) */                state->numBuys++;
+302: /* MUTANT (negate) */                if(! (DEBUG))
+309: /* MUTANT (rep_const) */        return 1;
+309: /* MUTANT (rep_const) */        return -1;
+313: /* MUTANT (del_stmt) */ /*         return state->handCount[ whoseTurn(state) ]; */ 
+317: /* MUTANT (del_stmt) */ /*         int currentPlayer = whoseTurn(state); */ 
+318: /* MUTANT (del_stmt) */ /*         return state->hand[currentPlayer][handPos]; */ 
+322: /* MUTANT (del_stmt) */ /*         return state->supplyCount[card]; */ 
+326: /* MUTANT (del_stmt) */ /*         int i; */ 
+327: /* MUTANT (del_stmt) */ /*         int count = 0; */ 
+327: /* MUTANT (rep_const) */        int count = 1;
+327: /* MUTANT (rep_const) */        int count = -1;
+329: /* MUTANT (rep_op) */        for (i = 0; i <= state->deckCount[player]; i++)
+329: /* MUTANT (rep_op) */        for (i = 0; i > state->deckCount[player]; i++)
+329: /* MUTANT (rep_op) */        for (i = 0; i >= state->deckCount[player]; i++)
+329: /* MUTANT (rep_op) */        for (i = 0; i == state->deckCount[player]; i++)
+329: /* MUTANT (rep_op) */        for (i = 0; i != state->deckCount[player]; i++)
+329: /* MUTANT (rep_op) */        for (i = 0; i < state->deckCount[player]; i--)
+329: /* MUTANT (rep_const) */        for (i = 1; i < state->deckCount[player]; i++)
+329: /* MUTANT (rep_const) */        for (i = -1; i < state->deckCount[player]; i++)
+331: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == card) count++; */ 
+331: /* MUTANT (rep_op) */                if (state->deck[player][i] != card) count++;
+331: /* MUTANT (rep_op) */                if (state->deck[player][i] == card) count--;
+331: /* MUTANT (negate) */                if(! (state->deck[player][i] == card)) count++;
+334: /* MUTANT (rep_op) */        for (i = 0; i <= state->handCount[player]; i++)
+334: /* MUTANT (rep_op) */        for (i = 0; i > state->handCount[player]; i++)
+334: /* MUTANT (rep_op) */        for (i = 0; i >= state->handCount[player]; i++)
+334: /* MUTANT (rep_op) */        for (i = 0; i == state->handCount[player]; i++)
+334: /* MUTANT (rep_op) */        for (i = 0; i != state->handCount[player]; i++)
+334: /* MUTANT (rep_op) */        for (i = 0; i < state->handCount[player]; i--)
+334: /* MUTANT (rep_const) */        for (i = 1; i < state->handCount[player]; i++)
+334: /* MUTANT (rep_const) */        for (i = -1; i < state->handCount[player]; i++)
+336: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == card) count++; */ 
+336: /* MUTANT (rep_op) */                if (state->hand[player][i] != card) count++;
+336: /* MUTANT (rep_op) */                if (state->hand[player][i] == card) count--;
+336: /* MUTANT (negate) */                if(! (state->hand[player][i] == card)) count++;
+339: /* MUTANT (rep_op) */        for (i = 0; i <= state->discardCount[player]; i++)
+339: /* MUTANT (rep_op) */        for (i = 0; i > state->discardCount[player]; i++)
+339: /* MUTANT (rep_op) */        for (i = 0; i >= state->discardCount[player]; i++)
+339: /* MUTANT (rep_op) */        for (i = 0; i == state->discardCount[player]; i++)
+339: /* MUTANT (rep_op) */        for (i = 0; i != state->discardCount[player]; i++)
+339: /* MUTANT (rep_op) */        for (i = 0; i < state->discardCount[player]; i--)
+339: /* MUTANT (rep_const) */        for (i = 1; i < state->discardCount[player]; i++)
+339: /* MUTANT (rep_const) */        for (i = -1; i < state->discardCount[player]; i++)
+341: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == card) count++; */ 
+341: /* MUTANT (rep_op) */                if (state->discard[player][i] != card) count++;
+341: /* MUTANT (rep_op) */                if (state->discard[player][i] == card) count--;
+341: /* MUTANT (negate) */                if(! (state->discard[player][i] == card)) count++;
+348: /* MUTANT (del_stmt) */ /*         return state->whoseTurn; */ 
+352: /* MUTANT (del_stmt) */ /*         int k; */ 
+353: /* MUTANT (del_stmt) */ /*         int i; */ 
+354: /* MUTANT (del_stmt) */ /*         int currentPlayer = whoseTurn(state); */ 
+357: /* MUTANT (rep_op) */        for (i = 0; i <= state->handCount[currentPlayer]; i++) {
+357: /* MUTANT (rep_op) */        for (i = 0; i > state->handCount[currentPlayer]; i++) {
+357: /* MUTANT (rep_op) */        for (i = 0; i >= state->handCount[currentPlayer]; i++) {
+357: /* MUTANT (rep_op) */        for (i = 0; i == state->handCount[currentPlayer]; i++) {
+357: /* MUTANT (rep_op) */        for (i = 0; i != state->handCount[currentPlayer]; i++) {
+357: /* MUTANT (rep_op) */        for (i = 0; i < state->handCount[currentPlayer]; i--) {
+357: /* MUTANT (rep_const) */        for (i = 1; i < state->handCount[currentPlayer]; i++) {
+357: /* MUTANT (rep_const) */        for (i = -1; i < state->handCount[currentPlayer]; i++) {
+358: /* MUTANT (del_stmt) */ /*                 state->discard[currentPlayer][state->discardCount[currentPlayer]++] = state->hand[currentPlayer][i]; */ //Discard
+358: /* MUTANT (rep_op) */                state->discard[currentPlayer][state->discardCount[currentPlayer]--] = state->hand[currentPlayer][i];//Discard
+359: /* MUTANT (del_stmt) */ /*                 state->hand[currentPlayer][i] = -1; */ //Set card to -1
+359: /* MUTANT (rep_const) */                state->hand[currentPlayer][i] = 0;//Set card to -1
+359: /* MUTANT (rep_const) */                state->hand[currentPlayer][i] = 1;//Set card to -1
+359: /* MUTANT (rep_const) */                state->hand[currentPlayer][i] = ((-1)+1);//Set card to -1
+359: /* MUTANT (rep_const) */                state->hand[currentPlayer][i] = ((-1)-1);//Set card to -1
+361: /* MUTANT (rep_const) */        state->handCount[currentPlayer] = 1;//Reset hand count
+361: /* MUTANT (rep_const) */        state->handCount[currentPlayer] = -1;//Reset hand count
+364: /* MUTANT (rep_op) */        if (currentPlayer <= (state->numPlayers - 1)) {
+364: /* MUTANT (rep_op) */        if (currentPlayer > (state->numPlayers - 1)) {
+364: /* MUTANT (rep_op) */        if (currentPlayer >= (state->numPlayers - 1)) {
+364: /* MUTANT (rep_op) */        if (currentPlayer == (state->numPlayers - 1)) {
+364: /* MUTANT (rep_op) */        if (currentPlayer != (state->numPlayers - 1)) {
+364: /* MUTANT (rep_const) */        if (currentPlayer < (state->numPlayers - 0)) {
+364: /* MUTANT (rep_const) */        if (currentPlayer < (state->numPlayers - -1)) {
+364: /* MUTANT (rep_const) */        if (currentPlayer < (state->numPlayers - ((1)+1))) {
+364: /* MUTANT (negate) */        if(! (currentPlayer < (state->numPlayers - 1))) {
+365: /* MUTANT (del_stmt) */ /*                 state->whoseTurn = currentPlayer + 1; */ //Still safe to increment
+365: /* MUTANT (rep_op) */                state->whoseTurn = currentPlayer - 1;//Still safe to increment
+365: /* MUTANT (rep_op) */                state->whoseTurn = currentPlayer * 1;//Still safe to increment
+365: /* MUTANT (rep_op) */                state->whoseTurn = currentPlayer % 1;//Still safe to increment
+365: /* MUTANT (rep_const) */                state->whoseTurn = currentPlayer + 0;//Still safe to increment
+365: /* MUTANT (rep_const) */                state->whoseTurn = currentPlayer + -1;//Still safe to increment
+365: /* MUTANT (rep_const) */                state->whoseTurn = currentPlayer + ((1)+1);//Still safe to increment
+368: /* MUTANT (del_stmt) */ /*                 state->whoseTurn = 0; */ //Max player has been reached, loop back around to player 1
+368: /* MUTANT (rep_const) */                state->whoseTurn = 1;//Max player has been reached, loop back around to player 1
+368: /* MUTANT (rep_const) */                state->whoseTurn = -1;//Max player has been reached, loop back around to player 1
+371: /* MUTANT (rep_const) */        state->outpostPlayed = 1;
+371: /* MUTANT (rep_const) */        state->outpostPlayed = -1;
+372: /* MUTANT (del_stmt) */ /*         state->phase = 0; */ 
+372: /* MUTANT (rep_const) */        state->phase = 1;
+372: /* MUTANT (rep_const) */        state->phase = -1;
+373: /* MUTANT (del_stmt) */ /*         state->numActions = 1; */ 
+373: /* MUTANT (rep_const) */        state->numActions = 0;
+373: /* MUTANT (rep_const) */        state->numActions = -1;
+373: /* MUTANT (rep_const) */        state->numActions = ((1)+1);
+374: /* MUTANT (del_stmt) */ /*         state->coins = 0; */ 
+374: /* MUTANT (rep_const) */        state->coins = 1;
+374: /* MUTANT (rep_const) */        state->coins = -1;
+375: /* MUTANT (del_stmt) */ /*         state->numBuys = 1; */ 
+375: /* MUTANT (rep_const) */        state->numBuys = 0;
+375: /* MUTANT (rep_const) */        state->numBuys = -1;
+375: /* MUTANT (rep_const) */        state->numBuys = ((1)+1);
+376: /* MUTANT (del_stmt) */ /*         state->playedCardCount = 0; */ 
+376: /* MUTANT (rep_const) */        state->playedCardCount = 1;
+376: /* MUTANT (rep_const) */        state->playedCardCount = -1;
+377: /* MUTANT (del_stmt) */ /*         state->handCount[state->whoseTurn] = 0; */ 
+377: /* MUTANT (rep_const) */        state->handCount[state->whoseTurn] = 1;
+377: /* MUTANT (rep_const) */        state->handCount[state->whoseTurn] = -1;
+381: /* MUTANT (rep_op) */        for (k = 0; k <= 5; k++) {
+381: /* MUTANT (rep_op) */        for (k = 0; k > 5; k++) {
+381: /* MUTANT (rep_op) */        for (k = 0; k >= 5; k++) {
+381: /* MUTANT (rep_op) */        for (k = 0; k == 5; k++) {
+381: /* MUTANT (rep_op) */        for (k = 0; k != 5; k++) {
+381: /* MUTANT (rep_op) */        for (k = 0; k < 5; k--) {
+381: /* MUTANT (rep_const) */        for (k = 1; k < 5; k++) {
+381: /* MUTANT (rep_const) */        for (k = -1; k < 5; k++) {
+381: /* MUTANT (rep_const) */        for (k = 0; k < 0; k++) {
+381: /* MUTANT (rep_const) */        for (k = 0; k < 1; k++) {
+381: /* MUTANT (rep_const) */        for (k = 0; k < -1; k++) {
+381: /* MUTANT (rep_const) */        for (k = 0; k < ((5)+1); k++) {
+381: /* MUTANT (rep_const) */        for (k = 0; k < ((5)-1); k++) {
+382: /* MUTANT (del_stmt) */ /*                 drawCard(state->whoseTurn, state); */ //Draw a card
+386: /* MUTANT (rep_const) */        updateCoins(state->whoseTurn, state, 1);
+386: /* MUTANT (rep_const) */        updateCoins(state->whoseTurn, state, -1);
+388: /* MUTANT (del_stmt) */ /*         return 0; */ 
+388: /* MUTANT (rep_const) */        return 1;
+388: /* MUTANT (rep_const) */        return -1;
+392: /* MUTANT (del_stmt) */ /*         int i; */ 
+393: /* MUTANT (del_stmt) */ /*         int j; */ 
+396: /* MUTANT (rep_op) */        if (state->supplyCount[province] != 0)
+396: /* MUTANT (rep_const) */        if (state->supplyCount[province] == 1)
+396: /* MUTANT (rep_const) */        if (state->supplyCount[province] == -1)
+396: /* MUTANT (negate) */        if(! (state->supplyCount[province] == 0))
+398: /* MUTANT (del_stmt) */ /*                 return 1; */ 
+398: /* MUTANT (rep_const) */                return 0;
+398: /* MUTANT (rep_const) */                return -1;
+398: /* MUTANT (rep_const) */                return ((1)+1);
+402: /* MUTANT (rep_const) */        j = 1;
+402: /* MUTANT (rep_const) */        j = -1;
+403: /* MUTANT (rep_op) */        for (i = 0; i <= 25; i++)
+403: /* MUTANT (rep_op) */        for (i = 0; i > 25; i++)
+403: /* MUTANT (rep_op) */        for (i = 0; i >= 25; i++)
+403: /* MUTANT (rep_op) */        for (i = 0; i == 25; i++)
+403: /* MUTANT (rep_op) */        for (i = 0; i != 25; i++)
+403: /* MUTANT (rep_op) */        for (i = 0; i < 25; i--)
+403: /* MUTANT (rep_const) */        for (i = 1; i < 25; i++)
+403: /* MUTANT (rep_const) */        for (i = -1; i < 25; i++)
+403: /* MUTANT (rep_const) */        for (i = 0; i < 0; i++)
+403: /* MUTANT (rep_const) */        for (i = 0; i < 1; i++)
+403: /* MUTANT (rep_const) */        for (i = 0; i < -1; i++)
+403: /* MUTANT (rep_const) */        for (i = 0; i < ((25)+1); i++)
+403: /* MUTANT (rep_const) */        for (i = 0; i < ((25)-1); i++)
+405: /* MUTANT (rep_op) */                if (state->supplyCount[i] != 0)
+405: /* MUTANT (rep_const) */                if (state->supplyCount[i] == 1)
+405: /* MUTANT (rep_const) */                if (state->supplyCount[i] == -1)
+405: /* MUTANT (negate) */                if(! (state->supplyCount[i] == 0))
+407: /* MUTANT (del_stmt) */ /*                         j++; */ 
+407: /* MUTANT (rep_op) */                        j--;
+410: /* MUTANT (rep_op) */        if ( j <= 3)
+410: /* MUTANT (rep_op) */        if ( j < 3)
+410: /* MUTANT (rep_op) */        if ( j > 3)
+410: /* MUTANT (rep_op) */        if ( j == 3)
+410: /* MUTANT (rep_op) */        if ( j != 3)
+410: /* MUTANT (rep_const) */        if ( j >= 0)
+410: /* MUTANT (rep_const) */        if ( j >= 1)
+410: /* MUTANT (rep_const) */        if ( j >= -1)
+410: /* MUTANT (rep_const) */        if ( j >= ((3)+1))
+410: /* MUTANT (rep_const) */        if ( j >= ((3)-1))
+410: /* MUTANT (negate) */        if(! ( j >= 3))
+412: /* MUTANT (del_stmt) */ /*                 return 1; */ 
+412: /* MUTANT (rep_const) */                return 0;
+412: /* MUTANT (rep_const) */                return -1;
+412: /* MUTANT (rep_const) */                return ((1)+1);
+415: /* MUTANT (rep_const) */        return 1;
+415: /* MUTANT (rep_const) */        return -1;
+420: /* MUTANT (del_stmt) */ /*         int i; */ 
+421: /* MUTANT (del_stmt) */ /*         int score = 0; */ 
+421: /* MUTANT (rep_const) */        int score = 1;
+421: /* MUTANT (rep_const) */        int score = -1;
+423: /* MUTANT (rep_op) */        for (i = 0; i <= state->handCount[player]; i++)
+423: /* MUTANT (rep_op) */        for (i = 0; i > state->handCount[player]; i++)
+423: /* MUTANT (rep_op) */        for (i = 0; i >= state->handCount[player]; i++)
+423: /* MUTANT (rep_op) */        for (i = 0; i == state->handCount[player]; i++)
+423: /* MUTANT (rep_op) */        for (i = 0; i != state->handCount[player]; i++)
+423: /* MUTANT (rep_op) */        for (i = 0; i < state->handCount[player]; i--)
+423: /* MUTANT (rep_const) */        for (i = 1; i < state->handCount[player]; i++)
+423: /* MUTANT (rep_const) */        for (i = -1; i < state->handCount[player]; i++)
+425: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == curse) { score = score - 1; */  };
+425: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == curse) { score = score - 1; */  /*  }; */ 
+425: /* MUTANT (del_stmt) */                if (state->hand[player][i] == curse) { score = score - 1; /*  }; */ 
+425: /* MUTANT (rep_op) */                if (state->hand[player][i] != curse) { score = score - 1; };
+425: /* MUTANT (rep_const) */                if (state->hand[player][i] == curse) { score = score - 0; };
+425: /* MUTANT (rep_const) */                if (state->hand[player][i] == curse) { score = score - -1; };
+425: /* MUTANT (rep_const) */                if (state->hand[player][i] == curse) { score = score - ((1)+1); };
+425: /* MUTANT (negate) */                if(! (state->hand[player][i] == curse)) { score = score - 1; };
+426: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == estate) { score = score + 1; */  };
+426: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == estate) { score = score + 1; */  /*  }; */ 
+426: /* MUTANT (del_stmt) */                if (state->hand[player][i] == estate) { score = score + 1; /*  }; */ 
+426: /* MUTANT (rep_op) */                if (state->hand[player][i] != estate) { score = score + 1; };
+426: /* MUTANT (rep_op) */                if (state->hand[player][i] == estate) { score = score - 1; };
+426: /* MUTANT (rep_op) */                if (state->hand[player][i] == estate) { score = score * 1; };
+426: /* MUTANT (rep_op) */                if (state->hand[player][i] == estate) { score = score % 1; };
+426: /* MUTANT (rep_const) */                if (state->hand[player][i] == estate) { score = score + 0; };
+426: /* MUTANT (rep_const) */                if (state->hand[player][i] == estate) { score = score + -1; };
+426: /* MUTANT (rep_const) */                if (state->hand[player][i] == estate) { score = score + ((1)+1); };
+426: /* MUTANT (negate) */                if(! (state->hand[player][i] == estate)) { score = score + 1; };
+427: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == duchy) { score = score + 3; */  };
+427: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == duchy) { score = score + 3; */  /*  }; */ 
+427: /* MUTANT (del_stmt) */                if (state->hand[player][i] == duchy) { score = score + 3; /*  }; */ 
+427: /* MUTANT (rep_op) */                if (state->hand[player][i] != duchy) { score = score + 3; };
+427: /* MUTANT (rep_op) */                if (state->hand[player][i] == duchy) { score = score - 3; };
+427: /* MUTANT (rep_op) */                if (state->hand[player][i] == duchy) { score = score * 3; };
+427: /* MUTANT (rep_op) */                if (state->hand[player][i] == duchy) { score = score % 3; };
+427: /* MUTANT (rep_const) */                if (state->hand[player][i] == duchy) { score = score + 0; };
+427: /* MUTANT (rep_const) */                if (state->hand[player][i] == duchy) { score = score + 1; };
+427: /* MUTANT (rep_const) */                if (state->hand[player][i] == duchy) { score = score + -1; };
+427: /* MUTANT (rep_const) */                if (state->hand[player][i] == duchy) { score = score + ((3)+1); };
+427: /* MUTANT (rep_const) */                if (state->hand[player][i] == duchy) { score = score + ((3)-1); };
+427: /* MUTANT (negate) */                if(! (state->hand[player][i] == duchy)) { score = score + 3; };
+428: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == province) { score = score + 6; */  };
+428: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == province) { score = score + 6; */  /*  }; */ 
+428: /* MUTANT (del_stmt) */                if (state->hand[player][i] == province) { score = score + 6; /*  }; */ 
+428: /* MUTANT (rep_op) */                if (state->hand[player][i] != province) { score = score + 6; };
+428: /* MUTANT (rep_op) */                if (state->hand[player][i] == province) { score = score - 6; };
+428: /* MUTANT (rep_op) */                if (state->hand[player][i] == province) { score = score * 6; };
+428: /* MUTANT (rep_op) */                if (state->hand[player][i] == province) { score = score % 6; };
+428: /* MUTANT (rep_const) */                if (state->hand[player][i] == province) { score = score + 0; };
+428: /* MUTANT (rep_const) */                if (state->hand[player][i] == province) { score = score + 1; };
+428: /* MUTANT (rep_const) */                if (state->hand[player][i] == province) { score = score + -1; };
+428: /* MUTANT (rep_const) */                if (state->hand[player][i] == province) { score = score + ((6)+1); };
+428: /* MUTANT (rep_const) */                if (state->hand[player][i] == province) { score = score + ((6)-1); };
+428: /* MUTANT (negate) */                if(! (state->hand[player][i] == province)) { score = score + 6; };
+429: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == great_hall) { score = score + 1; */  };
+429: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == great_hall) { score = score + 1; */  /*  }; */ 
+429: /* MUTANT (del_stmt) */                if (state->hand[player][i] == great_hall) { score = score + 1; /*  }; */ 
+429: /* MUTANT (rep_op) */                if (state->hand[player][i] != great_hall) { score = score + 1; };
+429: /* MUTANT (rep_op) */                if (state->hand[player][i] == great_hall) { score = score - 1; };
+429: /* MUTANT (rep_op) */                if (state->hand[player][i] == great_hall) { score = score * 1; };
+429: /* MUTANT (rep_op) */                if (state->hand[player][i] == great_hall) { score = score % 1; };
+429: /* MUTANT (rep_const) */                if (state->hand[player][i] == great_hall) { score = score + 0; };
+429: /* MUTANT (rep_const) */                if (state->hand[player][i] == great_hall) { score = score + -1; };
+429: /* MUTANT (rep_const) */                if (state->hand[player][i] == great_hall) { score = score + ((1)+1); };
+429: /* MUTANT (negate) */                if(! (state->hand[player][i] == great_hall)) { score = score + 1; };
+430: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); */  };
+430: /* MUTANT (del_stmt) */ /*                 if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); */  /*  }; */ 
+430: /* MUTANT (del_stmt) */                if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); /*  }; */ 
+430: /* MUTANT (rep_op) */                if (state->hand[player][i] != gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+430: /* MUTANT (rep_op) */                if (state->hand[player][i] == gardens) { score = score - ( fullDeckCount(player, 0, state) / 10 ); };
+430: /* MUTANT (rep_op) */                if (state->hand[player][i] == gardens) { score = score * ( fullDeckCount(player, 0, state) / 10 ); };
+430: /* MUTANT (rep_op) */                if (state->hand[player][i] == gardens) { score = score % ( fullDeckCount(player, 0, state) / 10 ); };
+430: /* MUTANT (rep_const) */                if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 1, state) / 10 ); };
+430: /* MUTANT (rep_const) */                if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, -1, state) / 10 ); };
+430: /* MUTANT (rep_const) */                if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 0 ); };
+430: /* MUTANT (rep_const) */                if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 1 ); };
+430: /* MUTANT (rep_const) */                if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / -1 ); };
+430: /* MUTANT (rep_const) */                if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / ((10)+1) ); };
+430: /* MUTANT (rep_const) */                if (state->hand[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / ((10)-1) ); };
+430: /* MUTANT (negate) */                if(! (state->hand[player][i] == gardens)) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+434: /* MUTANT (rep_op) */        for (i = 0; i <= state->discardCount[player]; i++)
+434: /* MUTANT (rep_op) */        for (i = 0; i > state->discardCount[player]; i++)
+434: /* MUTANT (rep_op) */        for (i = 0; i >= state->discardCount[player]; i++)
+434: /* MUTANT (rep_op) */        for (i = 0; i == state->discardCount[player]; i++)
+434: /* MUTANT (rep_op) */        for (i = 0; i != state->discardCount[player]; i++)
+434: /* MUTANT (rep_op) */        for (i = 0; i < state->discardCount[player]; i--)
+434: /* MUTANT (rep_const) */        for (i = 1; i < state->discardCount[player]; i++)
+434: /* MUTANT (rep_const) */        for (i = -1; i < state->discardCount[player]; i++)
+436: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == curse) { score = score - 1; */  };
+436: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == curse) { score = score - 1; */  /*  }; */ 
+436: /* MUTANT (del_stmt) */                if (state->discard[player][i] == curse) { score = score - 1; /*  }; */ 
+436: /* MUTANT (rep_op) */                if (state->discard[player][i] != curse) { score = score - 1; };
+436: /* MUTANT (rep_const) */                if (state->discard[player][i] == curse) { score = score - 0; };
+436: /* MUTANT (rep_const) */                if (state->discard[player][i] == curse) { score = score - -1; };
+436: /* MUTANT (rep_const) */                if (state->discard[player][i] == curse) { score = score - ((1)+1); };
+436: /* MUTANT (negate) */                if(! (state->discard[player][i] == curse)) { score = score - 1; };
+437: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == estate) { score = score + 1; */  };
+437: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == estate) { score = score + 1; */  /*  }; */ 
+437: /* MUTANT (del_stmt) */                if (state->discard[player][i] == estate) { score = score + 1; /*  }; */ 
+437: /* MUTANT (rep_op) */                if (state->discard[player][i] != estate) { score = score + 1; };
+437: /* MUTANT (rep_op) */                if (state->discard[player][i] == estate) { score = score - 1; };
+437: /* MUTANT (rep_op) */                if (state->discard[player][i] == estate) { score = score * 1; };
+437: /* MUTANT (rep_op) */                if (state->discard[player][i] == estate) { score = score % 1; };
+437: /* MUTANT (rep_const) */                if (state->discard[player][i] == estate) { score = score + 0; };
+437: /* MUTANT (rep_const) */                if (state->discard[player][i] == estate) { score = score + -1; };
+437: /* MUTANT (rep_const) */                if (state->discard[player][i] == estate) { score = score + ((1)+1); };
+437: /* MUTANT (negate) */                if(! (state->discard[player][i] == estate)) { score = score + 1; };
+438: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == duchy) { score = score + 3; */  };
+438: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == duchy) { score = score + 3; */  /*  }; */ 
+438: /* MUTANT (del_stmt) */                if (state->discard[player][i] == duchy) { score = score + 3; /*  }; */ 
+438: /* MUTANT (rep_op) */                if (state->discard[player][i] != duchy) { score = score + 3; };
+438: /* MUTANT (rep_op) */                if (state->discard[player][i] == duchy) { score = score - 3; };
+438: /* MUTANT (rep_op) */                if (state->discard[player][i] == duchy) { score = score * 3; };
+438: /* MUTANT (rep_op) */                if (state->discard[player][i] == duchy) { score = score % 3; };
+438: /* MUTANT (rep_const) */                if (state->discard[player][i] == duchy) { score = score + 0; };
+438: /* MUTANT (rep_const) */                if (state->discard[player][i] == duchy) { score = score + 1; };
+438: /* MUTANT (rep_const) */                if (state->discard[player][i] == duchy) { score = score + -1; };
+438: /* MUTANT (rep_const) */                if (state->discard[player][i] == duchy) { score = score + ((3)+1); };
+438: /* MUTANT (rep_const) */                if (state->discard[player][i] == duchy) { score = score + ((3)-1); };
+438: /* MUTANT (negate) */                if(! (state->discard[player][i] == duchy)) { score = score + 3; };
+439: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == province) { score = score + 6; */  };
+439: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == province) { score = score + 6; */  /*  }; */ 
+439: /* MUTANT (del_stmt) */                if (state->discard[player][i] == province) { score = score + 6; /*  }; */ 
+439: /* MUTANT (rep_op) */                if (state->discard[player][i] != province) { score = score + 6; };
+439: /* MUTANT (rep_op) */                if (state->discard[player][i] == province) { score = score - 6; };
+439: /* MUTANT (rep_op) */                if (state->discard[player][i] == province) { score = score * 6; };
+439: /* MUTANT (rep_op) */                if (state->discard[player][i] == province) { score = score % 6; };
+439: /* MUTANT (rep_const) */                if (state->discard[player][i] == province) { score = score + 0; };
+439: /* MUTANT (rep_const) */                if (state->discard[player][i] == province) { score = score + 1; };
+439: /* MUTANT (rep_const) */                if (state->discard[player][i] == province) { score = score + -1; };
+439: /* MUTANT (rep_const) */                if (state->discard[player][i] == province) { score = score + ((6)+1); };
+439: /* MUTANT (rep_const) */                if (state->discard[player][i] == province) { score = score + ((6)-1); };
+439: /* MUTANT (negate) */                if(! (state->discard[player][i] == province)) { score = score + 6; };
+440: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == great_hall) { score = score + 1; */  };
+440: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == great_hall) { score = score + 1; */  /*  }; */ 
+440: /* MUTANT (del_stmt) */                if (state->discard[player][i] == great_hall) { score = score + 1; /*  }; */ 
+440: /* MUTANT (rep_op) */                if (state->discard[player][i] != great_hall) { score = score + 1; };
+440: /* MUTANT (rep_op) */                if (state->discard[player][i] == great_hall) { score = score - 1; };
+440: /* MUTANT (rep_op) */                if (state->discard[player][i] == great_hall) { score = score * 1; };
+440: /* MUTANT (rep_op) */                if (state->discard[player][i] == great_hall) { score = score % 1; };
+440: /* MUTANT (rep_const) */                if (state->discard[player][i] == great_hall) { score = score + 0; };
+440: /* MUTANT (rep_const) */                if (state->discard[player][i] == great_hall) { score = score + -1; };
+440: /* MUTANT (rep_const) */                if (state->discard[player][i] == great_hall) { score = score + ((1)+1); };
+440: /* MUTANT (negate) */                if(! (state->discard[player][i] == great_hall)) { score = score + 1; };
+441: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); */  };
+441: /* MUTANT (del_stmt) */ /*                 if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); */  /*  }; */ 
+441: /* MUTANT (del_stmt) */                if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); /*  }; */ 
+441: /* MUTANT (rep_op) */                if (state->discard[player][i] != gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+441: /* MUTANT (rep_op) */                if (state->discard[player][i] == gardens) { score = score - ( fullDeckCount(player, 0, state) / 10 ); };
+441: /* MUTANT (rep_op) */                if (state->discard[player][i] == gardens) { score = score * ( fullDeckCount(player, 0, state) / 10 ); };
+441: /* MUTANT (rep_op) */                if (state->discard[player][i] == gardens) { score = score % ( fullDeckCount(player, 0, state) / 10 ); };
+441: /* MUTANT (rep_const) */                if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 1, state) / 10 ); };
+441: /* MUTANT (rep_const) */                if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, -1, state) / 10 ); };
+441: /* MUTANT (rep_const) */                if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 0 ); };
+441: /* MUTANT (rep_const) */                if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 1 ); };
+441: /* MUTANT (rep_const) */                if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / -1 ); };
+441: /* MUTANT (rep_const) */                if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / ((10)+1) ); };
+441: /* MUTANT (rep_const) */                if (state->discard[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / ((10)-1) ); };
+441: /* MUTANT (negate) */                if(! (state->discard[player][i] == gardens)) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+445: /* MUTANT (rep_op) */        for (i = 0; i <= state->discardCount[player]; i++)
+445: /* MUTANT (rep_op) */        for (i = 0; i > state->discardCount[player]; i++)
+445: /* MUTANT (rep_op) */        for (i = 0; i >= state->discardCount[player]; i++)
+445: /* MUTANT (rep_op) */        for (i = 0; i == state->discardCount[player]; i++)
+445: /* MUTANT (rep_op) */        for (i = 0; i != state->discardCount[player]; i++)
+445: /* MUTANT (rep_op) */        for (i = 0; i < state->discardCount[player]; i--)
+445: /* MUTANT (rep_const) */        for (i = 1; i < state->discardCount[player]; i++)
+445: /* MUTANT (rep_const) */        for (i = -1; i < state->discardCount[player]; i++)
+447: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == curse) { score = score - 1; */  };
+447: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == curse) { score = score - 1; */  /*  }; */ 
+447: /* MUTANT (del_stmt) */                if (state->deck[player][i] == curse) { score = score - 1; /*  }; */ 
+447: /* MUTANT (rep_op) */                if (state->deck[player][i] != curse) { score = score - 1; };
+447: /* MUTANT (rep_const) */                if (state->deck[player][i] == curse) { score = score - 0; };
+447: /* MUTANT (rep_const) */                if (state->deck[player][i] == curse) { score = score - -1; };
+447: /* MUTANT (rep_const) */                if (state->deck[player][i] == curse) { score = score - ((1)+1); };
+447: /* MUTANT (negate) */                if(! (state->deck[player][i] == curse)) { score = score - 1; };
+448: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == estate) { score = score + 1; */  };
+448: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == estate) { score = score + 1; */  /*  }; */ 
+448: /* MUTANT (del_stmt) */                if (state->deck[player][i] == estate) { score = score + 1; /*  }; */ 
+448: /* MUTANT (rep_op) */                if (state->deck[player][i] != estate) { score = score + 1; };
+448: /* MUTANT (rep_op) */                if (state->deck[player][i] == estate) { score = score - 1; };
+448: /* MUTANT (rep_op) */                if (state->deck[player][i] == estate) { score = score * 1; };
+448: /* MUTANT (rep_op) */                if (state->deck[player][i] == estate) { score = score % 1; };
+448: /* MUTANT (rep_const) */                if (state->deck[player][i] == estate) { score = score + 0; };
+448: /* MUTANT (rep_const) */                if (state->deck[player][i] == estate) { score = score + -1; };
+448: /* MUTANT (rep_const) */                if (state->deck[player][i] == estate) { score = score + ((1)+1); };
+448: /* MUTANT (negate) */                if(! (state->deck[player][i] == estate)) { score = score + 1; };
+449: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == duchy) { score = score + 3; */  };
+449: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == duchy) { score = score + 3; */  /*  }; */ 
+449: /* MUTANT (del_stmt) */                if (state->deck[player][i] == duchy) { score = score + 3; /*  }; */ 
+449: /* MUTANT (rep_op) */                if (state->deck[player][i] != duchy) { score = score + 3; };
+449: /* MUTANT (rep_op) */                if (state->deck[player][i] == duchy) { score = score - 3; };
+449: /* MUTANT (rep_op) */                if (state->deck[player][i] == duchy) { score = score * 3; };
+449: /* MUTANT (rep_op) */                if (state->deck[player][i] == duchy) { score = score % 3; };
+449: /* MUTANT (rep_const) */                if (state->deck[player][i] == duchy) { score = score + 0; };
+449: /* MUTANT (rep_const) */                if (state->deck[player][i] == duchy) { score = score + 1; };
+449: /* MUTANT (rep_const) */                if (state->deck[player][i] == duchy) { score = score + -1; };
+449: /* MUTANT (rep_const) */                if (state->deck[player][i] == duchy) { score = score + ((3)+1); };
+449: /* MUTANT (rep_const) */                if (state->deck[player][i] == duchy) { score = score + ((3)-1); };
+449: /* MUTANT (negate) */                if(! (state->deck[player][i] == duchy)) { score = score + 3; };
+450: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == province) { score = score + 6; */  };
+450: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == province) { score = score + 6; */  /*  }; */ 
+450: /* MUTANT (del_stmt) */                if (state->deck[player][i] == province) { score = score + 6; /*  }; */ 
+450: /* MUTANT (rep_op) */                if (state->deck[player][i] != province) { score = score + 6; };
+450: /* MUTANT (rep_op) */                if (state->deck[player][i] == province) { score = score - 6; };
+450: /* MUTANT (rep_op) */                if (state->deck[player][i] == province) { score = score * 6; };
+450: /* MUTANT (rep_op) */                if (state->deck[player][i] == province) { score = score % 6; };
+450: /* MUTANT (rep_const) */                if (state->deck[player][i] == province) { score = score + 0; };
+450: /* MUTANT (rep_const) */                if (state->deck[player][i] == province) { score = score + 1; };
+450: /* MUTANT (rep_const) */                if (state->deck[player][i] == province) { score = score + -1; };
+450: /* MUTANT (rep_const) */                if (state->deck[player][i] == province) { score = score + ((6)+1); };
+450: /* MUTANT (rep_const) */                if (state->deck[player][i] == province) { score = score + ((6)-1); };
+450: /* MUTANT (negate) */                if(! (state->deck[player][i] == province)) { score = score + 6; };
+451: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == great_hall) { score = score + 1; */  };
+451: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == great_hall) { score = score + 1; */  /*  }; */ 
+451: /* MUTANT (del_stmt) */                if (state->deck[player][i] == great_hall) { score = score + 1; /*  }; */ 
+451: /* MUTANT (rep_op) */                if (state->deck[player][i] != great_hall) { score = score + 1; };
+451: /* MUTANT (rep_op) */                if (state->deck[player][i] == great_hall) { score = score - 1; };
+451: /* MUTANT (rep_op) */                if (state->deck[player][i] == great_hall) { score = score * 1; };
+451: /* MUTANT (rep_op) */                if (state->deck[player][i] == great_hall) { score = score % 1; };
+451: /* MUTANT (rep_const) */                if (state->deck[player][i] == great_hall) { score = score + 0; };
+451: /* MUTANT (rep_const) */                if (state->deck[player][i] == great_hall) { score = score + -1; };
+451: /* MUTANT (rep_const) */                if (state->deck[player][i] == great_hall) { score = score + ((1)+1); };
+451: /* MUTANT (negate) */                if(! (state->deck[player][i] == great_hall)) { score = score + 1; };
+452: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); */  };
+452: /* MUTANT (del_stmt) */ /*                 if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); */  /*  }; */ 
+452: /* MUTANT (del_stmt) */                if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); /*  }; */ 
+452: /* MUTANT (rep_op) */                if (state->deck[player][i] != gardens) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+452: /* MUTANT (rep_op) */                if (state->deck[player][i] == gardens) { score = score - ( fullDeckCount(player, 0, state) / 10 ); };
+452: /* MUTANT (rep_op) */                if (state->deck[player][i] == gardens) { score = score * ( fullDeckCount(player, 0, state) / 10 ); };
+452: /* MUTANT (rep_op) */                if (state->deck[player][i] == gardens) { score = score % ( fullDeckCount(player, 0, state) / 10 ); };
+452: /* MUTANT (rep_const) */                if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 1, state) / 10 ); };
+452: /* MUTANT (rep_const) */                if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, -1, state) / 10 ); };
+452: /* MUTANT (rep_const) */                if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 0 ); };
+452: /* MUTANT (rep_const) */                if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / 1 ); };
+452: /* MUTANT (rep_const) */                if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / -1 ); };
+452: /* MUTANT (rep_const) */                if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / ((10)+1) ); };
+452: /* MUTANT (rep_const) */                if (state->deck[player][i] == gardens) { score = score + ( fullDeckCount(player, 0, state) / ((10)-1) ); };
+452: /* MUTANT (negate) */                if(! (state->deck[player][i] == gardens)) { score = score + ( fullDeckCount(player, 0, state) / 10 ); };
+459: /* MUTANT (del_stmt) */ /*         int i; */ 
+460: /* MUTANT (del_stmt) */ /*         int j; */ 
+461: /* MUTANT (del_stmt) */ /*         int highScore; */ 
+462: /* MUTANT (del_stmt) */ /*         int currentPlayer; */ 
+465: /* MUTANT (rep_op) */        for (i = 0; i <= MAX_PLAYERS; i++)
+465: /* MUTANT (rep_op) */        for (i = 0; i > MAX_PLAYERS; i++)
+465: /* MUTANT (rep_op) */        for (i = 0; i >= MAX_PLAYERS; i++)
+465: /* MUTANT (rep_op) */        for (i = 0; i == MAX_PLAYERS; i++)
+465: /* MUTANT (rep_op) */        for (i = 0; i != MAX_PLAYERS; i++)
+465: /* MUTANT (rep_op) */        for (i = 0; i < MAX_PLAYERS; i--)
+465: /* MUTANT (rep_const) */        for (i = 1; i < MAX_PLAYERS; i++)
+465: /* MUTANT (rep_const) */        for (i = -1; i < MAX_PLAYERS; i++)
+468: /* MUTANT (rep_op) */                if (i <= state->numPlayers)
+468: /* MUTANT (rep_op) */                if (i < state->numPlayers)
+468: /* MUTANT (rep_op) */                if (i > state->numPlayers)
+468: /* MUTANT (rep_op) */                if (i == state->numPlayers)
+468: /* MUTANT (rep_op) */                if (i != state->numPlayers)
+468: /* MUTANT (negate) */                if(! (i >= state->numPlayers))
+470: /* MUTANT (del_stmt) */ /*                         players[i] = -9999; */ 
+470: /* MUTANT (rep_const) */                        players[i] = 0;
+470: /* MUTANT (rep_const) */                        players[i] = 1;
+470: /* MUTANT (rep_const) */                        players[i] = -1;
+470: /* MUTANT (rep_const) */                        players[i] = ((-9999)+1);
+470: /* MUTANT (rep_const) */                        players[i] = ((-9999)-1);
+474: /* MUTANT (del_stmt) */ /*                         players[i] = scoreFor (i, state); */ 
+479: /* MUTANT (rep_const) */        j = 1;
+479: /* MUTANT (rep_const) */        j = -1;
+480: /* MUTANT (rep_op) */        for (i = 0; i <= MAX_PLAYERS; i++)
+480: /* MUTANT (rep_op) */        for (i = 0; i > MAX_PLAYERS; i++)
+480: /* MUTANT (rep_op) */        for (i = 0; i >= MAX_PLAYERS; i++)
+480: /* MUTANT (rep_op) */        for (i = 0; i == MAX_PLAYERS; i++)
+480: /* MUTANT (rep_op) */        for (i = 0; i != MAX_PLAYERS; i++)
+480: /* MUTANT (rep_op) */        for (i = 0; i < MAX_PLAYERS; i--)
+480: /* MUTANT (rep_const) */        for (i = 1; i < MAX_PLAYERS; i++)
+480: /* MUTANT (rep_const) */        for (i = -1; i < MAX_PLAYERS; i++)
+482: /* MUTANT (rep_op) */                if (players[i] <= players[j])
+482: /* MUTANT (rep_op) */                if (players[i] < players[j])
+482: /* MUTANT (rep_op) */                if (players[i] >= players[j])
+482: /* MUTANT (rep_op) */                if (players[i] == players[j])
+482: /* MUTANT (rep_op) */                if (players[i] != players[j])
+482: /* MUTANT (negate) */                if(! (players[i] > players[j]))
+484: /* MUTANT (del_stmt) */ /*                         j = i; */ 
+490: /* MUTANT (del_stmt) */ /*         currentPlayer = whoseTurn(state); */ 
+491: /* MUTANT (rep_op) */        for (i = 0; i <= MAX_PLAYERS; i++)
+491: /* MUTANT (rep_op) */        for (i = 0; i > MAX_PLAYERS; i++)
+491: /* MUTANT (rep_op) */        for (i = 0; i >= MAX_PLAYERS; i++)
+491: /* MUTANT (rep_op) */        for (i = 0; i == MAX_PLAYERS; i++)
+491: /* MUTANT (rep_op) */        for (i = 0; i != MAX_PLAYERS; i++)
+491: /* MUTANT (rep_op) */        for (i = 0; i < MAX_PLAYERS; i--)
+491: /* MUTANT (rep_const) */        for (i = 1; i < MAX_PLAYERS; i++)
+491: /* MUTANT (rep_const) */        for (i = -1; i < MAX_PLAYERS; i++)
+493: /* MUTANT (rep_op) */                if ( players[i] != highScore && i > currentPlayer )
+493: /* MUTANT (rep_op) */                if ( players[i] == highScore || i > currentPlayer )
+493: /* MUTANT (rep_op) */                if ( players[i] == highScore && i <= currentPlayer )
+493: /* MUTANT (rep_op) */                if ( players[i] == highScore && i < currentPlayer )
+493: /* MUTANT (rep_op) */                if ( players[i] == highScore && i >= currentPlayer )
+493: /* MUTANT (rep_op) */                if ( players[i] == highScore && i == currentPlayer )
+493: /* MUTANT (rep_op) */                if ( players[i] == highScore && i != currentPlayer )
+493: /* MUTANT (negate) */                if(! ( players[i] == highScore && i > currentPlayer ))
+495: /* MUTANT (del_stmt) */ /*                         players[i]++; */ 
+495: /* MUTANT (rep_op) */                        players[i]--;
+500: /* MUTANT (rep_const) */        j = 1;
+500: /* MUTANT (rep_const) */        j = -1;
+501: /* MUTANT (rep_op) */        for (i = 0; i <= MAX_PLAYERS; i++)
+501: /* MUTANT (rep_op) */        for (i = 0; i > MAX_PLAYERS; i++)
+501: /* MUTANT (rep_op) */        for (i = 0; i >= MAX_PLAYERS; i++)
+501: /* MUTANT (rep_op) */        for (i = 0; i == MAX_PLAYERS; i++)
+501: /* MUTANT (rep_op) */        for (i = 0; i != MAX_PLAYERS; i++)
+501: /* MUTANT (rep_op) */        for (i = 0; i < MAX_PLAYERS; i--)
+501: /* MUTANT (rep_const) */        for (i = 1; i < MAX_PLAYERS; i++)
+501: /* MUTANT (rep_const) */        for (i = -1; i < MAX_PLAYERS; i++)
+503: /* MUTANT (rep_op) */                if ( players[i] <= players[j] )
+503: /* MUTANT (rep_op) */                if ( players[i] < players[j] )
+503: /* MUTANT (rep_op) */                if ( players[i] >= players[j] )
+503: /* MUTANT (rep_op) */                if ( players[i] == players[j] )
+503: /* MUTANT (rep_op) */                if ( players[i] != players[j] )
+503: /* MUTANT (negate) */                if(! ( players[i] > players[j] ))
+505: /* MUTANT (del_stmt) */ /*                         j = i; */ 
+511: /* MUTANT (rep_op) */        for (i = 0; i <= MAX_PLAYERS; i++)
+511: /* MUTANT (rep_op) */        for (i = 0; i > MAX_PLAYERS; i++)
+511: /* MUTANT (rep_op) */        for (i = 0; i >= MAX_PLAYERS; i++)
+511: /* MUTANT (rep_op) */        for (i = 0; i == MAX_PLAYERS; i++)
+511: /* MUTANT (rep_op) */        for (i = 0; i != MAX_PLAYERS; i++)
+511: /* MUTANT (rep_op) */        for (i = 0; i < MAX_PLAYERS; i--)
+511: /* MUTANT (rep_const) */        for (i = 1; i < MAX_PLAYERS; i++)
+511: /* MUTANT (rep_const) */        for (i = -1; i < MAX_PLAYERS; i++)
+513: /* MUTANT (rep_op) */                if ( players[i] != highScore )
+513: /* MUTANT (negate) */                if(! ( players[i] == highScore ))
+515: /* MUTANT (del_stmt) */ /*                         players[i] = 1; */ 
+515: /* MUTANT (rep_const) */                        players[i] = 0;
+515: /* MUTANT (rep_const) */                        players[i] = -1;
+515: /* MUTANT (rep_const) */                        players[i] = ((1)+1);
+519: /* MUTANT (del_stmt) */ /*                         players[i] = 0; */ 
+519: /* MUTANT (rep_const) */                        players[i] = 1;
+519: /* MUTANT (rep_const) */                        players[i] = -1;
+523: /* MUTANT (rep_const) */        return 1;
+523: /* MUTANT (rep_const) */        return -1;
+528: /* MUTANT (del_stmt) */ /*         int count; */ 
+529: /* MUTANT (del_stmt) */ /*         int deckCounter; */ 
+530: /* MUTANT (rep_op) */        if (state->deckCount[player] < 0) {//Deck is empty
+530: /* MUTANT (rep_op) */        if (state->deckCount[player] > 0) {//Deck is empty
+530: /* MUTANT (rep_op) */        if (state->deckCount[player] >= 0) {//Deck is empty
+530: /* MUTANT (rep_op) */        if (state->deckCount[player] == 0) {//Deck is empty
+530: /* MUTANT (rep_op) */        if (state->deckCount[player] != 0) {//Deck is empty
+530: /* MUTANT (rep_const) */        if (state->deckCount[player] <= 1) {//Deck is empty
+530: /* MUTANT (rep_const) */        if (state->deckCount[player] <= -1) {//Deck is empty
+530: /* MUTANT (negate) */        if(! (state->deckCount[player] <= 0)) {//Deck is empty
+533: /* MUTANT (del_stmt) */ /*                 int i; */ 
+535: /* MUTANT (rep_op) */                for (i = 0; i <= state->discardCount[player]; i++) {
+535: /* MUTANT (rep_op) */                for (i = 0; i > state->discardCount[player]; i++) {
+535: /* MUTANT (rep_op) */                for (i = 0; i >= state->discardCount[player]; i++) {
+535: /* MUTANT (rep_op) */                for (i = 0; i == state->discardCount[player]; i++) {
+535: /* MUTANT (rep_op) */                for (i = 0; i != state->discardCount[player]; i++) {
+535: /* MUTANT (rep_op) */                for (i = 0; i < state->discardCount[player]; i--) {
+535: /* MUTANT (rep_const) */                for (i = 1; i < state->discardCount[player]; i++) {
+535: /* MUTANT (rep_const) */                for (i = -1; i < state->discardCount[player]; i++) {
+536: /* MUTANT (del_stmt) */ /*                         state->deck[player][i] = state->discard[player][i]; */ 
+537: /* MUTANT (del_stmt) */ /*                         state->discard[player][i] = -1; */ 
+537: /* MUTANT (rep_const) */                        state->discard[player][i] = 0;
+537: /* MUTANT (rep_const) */                        state->discard[player][i] = 1;
+537: /* MUTANT (rep_const) */                        state->discard[player][i] = ((-1)+1);
+537: /* MUTANT (rep_const) */                        state->discard[player][i] = ((-1)-1);
+541: /* MUTANT (del_stmt) */ /*                 state->discardCount[player] = 0; */ //Reset discard
+541: /* MUTANT (rep_const) */                state->discardCount[player] = 1;//Reset discard
+541: /* MUTANT (rep_const) */                state->discardCount[player] = -1;//Reset discard
+544: /* MUTANT (del_stmt) */ /*                 shuffle(player, state); */ //Shuffle the deck up and make it so that we can draw
+546: /* MUTANT (negate) */                if(! (DEBUG)) {//Debug statements
+547: /* MUTANT (del_stmt) */ /*                         printf("Deck count now: %d\n", state->deckCount[player]); */ 
+550: /* MUTANT (rep_const) */                state->discardCount[player] = 1;
+550: /* MUTANT (rep_const) */                state->discardCount[player] = -1;
+553: /* MUTANT (del_stmt) */ /*                 count = state->handCount[player]; */ //Get current player's hand count
+555: /* MUTANT (negate) */                if(! (DEBUG)) {//Debug statements
+556: /* MUTANT (del_stmt) */ /*                         printf("Current hand count: %d\n", count); */ 
+561: /* MUTANT (rep_op) */                if (deckCounter != 0)
+561: /* MUTANT (rep_const) */                if (deckCounter == 1)
+561: /* MUTANT (rep_const) */                if (deckCounter == -1)
+561: /* MUTANT (negate) */                if(! (deckCounter == 0))
+562: /* MUTANT (rep_const) */                        return 0;
+562: /* MUTANT (rep_const) */                        return 1;
+562: /* MUTANT (rep_const) */                        return ((-1)+1);
+562: /* MUTANT (rep_const) */                        return ((-1)-1);
+564: /* MUTANT (del_stmt) */ /*                 state->hand[player][count] = state->deck[player][deckCounter - 1]; */ //Add card to hand
+564: /* MUTANT (rep_const) */                state->hand[player][count] = state->deck[player][deckCounter - 0];//Add card to hand
+564: /* MUTANT (rep_const) */                state->hand[player][count] = state->deck[player][deckCounter - -1];//Add card to hand
+564: /* MUTANT (rep_const) */                state->hand[player][count] = state->deck[player][deckCounter - ((1)+1)];//Add card to hand
+565: /* MUTANT (del_stmt) */ /*                 state->deckCount[player]--; */ 
+565: /* MUTANT (rep_op) */                state->deckCount[player]++;
+566: /* MUTANT (del_stmt) */ /*                 state->handCount[player]++; */ //Increment hand count
+566: /* MUTANT (rep_op) */                state->handCount[player]--;//Increment hand count
+570: /* MUTANT (del_stmt) */ /*                 int count = state->handCount[player]; */ //Get current hand count for player
+571: /* MUTANT (del_stmt) */ /*                 int deckCounter; */ 
+572: /* MUTANT (negate) */                if(! (DEBUG)) {//Debug statements
+573: /* MUTANT (del_stmt) */ /*                         printf("Current hand count: %d\n", count); */ 
+577: /* MUTANT (del_stmt) */ /*                 state->hand[player][count] = state->deck[player][deckCounter - 1]; */ //Add card to the hand
+577: /* MUTANT (rep_const) */                state->hand[player][count] = state->deck[player][deckCounter - 0];//Add card to the hand
+577: /* MUTANT (rep_const) */                state->hand[player][count] = state->deck[player][deckCounter - -1];//Add card to the hand
+577: /* MUTANT (rep_const) */                state->hand[player][count] = state->deck[player][deckCounter - ((1)+1)];//Add card to the hand
+578: /* MUTANT (del_stmt) */ /*                 state->deckCount[player]--; */ 
+578: /* MUTANT (rep_op) */                state->deckCount[player]++;
+579: /* MUTANT (del_stmt) */ /*                 state->handCount[player]++; */ //Increment hand count
+579: /* MUTANT (rep_op) */                state->handCount[player]--;//Increment hand count
+582: /* MUTANT (rep_const) */        return 1;
+582: /* MUTANT (rep_const) */        return -1;
+590: /* MUTANT (rep_const) */                return 1;
+590: /* MUTANT (rep_const) */                return -1;
+592: /* MUTANT (rep_const) */                return 0;
+592: /* MUTANT (rep_const) */                return 1;
+592: /* MUTANT (rep_const) */                return -1;
+592: /* MUTANT (rep_const) */                return ((2)+1);
+592: /* MUTANT (rep_const) */                return ((2)-1);
+594: /* MUTANT (rep_const) */                return 0;
+594: /* MUTANT (rep_const) */                return 1;
+594: /* MUTANT (rep_const) */                return -1;
+594: /* MUTANT (rep_const) */                return ((5)+1);
+594: /* MUTANT (rep_const) */                return ((5)-1);
+596: /* MUTANT (rep_const) */                return 0;
+596: /* MUTANT (rep_const) */                return 1;
+596: /* MUTANT (rep_const) */                return -1;
+596: /* MUTANT (rep_const) */                return ((8)+1);
+596: /* MUTANT (rep_const) */                return ((8)-1);
+598: /* MUTANT (rep_const) */                return 1;
+598: /* MUTANT (rep_const) */                return -1;
+600: /* MUTANT (rep_const) */                return 0;
+600: /* MUTANT (rep_const) */                return 1;
+600: /* MUTANT (rep_const) */                return -1;
+600: /* MUTANT (rep_const) */                return ((3)+1);
+600: /* MUTANT (rep_const) */                return ((3)-1);
+602: /* MUTANT (rep_const) */                return 0;
+602: /* MUTANT (rep_const) */                return 1;
+602: /* MUTANT (rep_const) */                return -1;
+602: /* MUTANT (rep_const) */                return ((6)+1);
+602: /* MUTANT (rep_const) */                return ((6)-1);
+604: /* MUTANT (rep_const) */                return 0;
+604: /* MUTANT (rep_const) */                return 1;
+604: /* MUTANT (rep_const) */                return -1;
+604: /* MUTANT (rep_const) */                return ((6)+1);
+604: /* MUTANT (rep_const) */                return ((6)-1);
+606: /* MUTANT (rep_const) */                return 0;
+606: /* MUTANT (rep_const) */                return 1;
+606: /* MUTANT (rep_const) */                return -1;
+606: /* MUTANT (rep_const) */                return ((5)+1);
+606: /* MUTANT (rep_const) */                return ((5)-1);
+608: /* MUTANT (rep_const) */                return 0;
+608: /* MUTANT (rep_const) */                return 1;
+608: /* MUTANT (rep_const) */                return -1;
+608: /* MUTANT (rep_const) */                return ((4)+1);
+608: /* MUTANT (rep_const) */                return ((4)-1);
+610: /* MUTANT (rep_const) */                return 0;
+610: /* MUTANT (rep_const) */                return 1;
+610: /* MUTANT (rep_const) */                return -1;
+610: /* MUTANT (rep_const) */                return ((4)+1);
+610: /* MUTANT (rep_const) */                return ((4)-1);
+612: /* MUTANT (rep_const) */                return 0;
+612: /* MUTANT (rep_const) */                return 1;
+612: /* MUTANT (rep_const) */                return -1;
+612: /* MUTANT (rep_const) */                return ((5)+1);
+612: /* MUTANT (rep_const) */                return ((5)-1);
+614: /* MUTANT (rep_const) */                return 0;
+614: /* MUTANT (rep_const) */                return 1;
+614: /* MUTANT (rep_const) */                return -1;
+614: /* MUTANT (rep_const) */                return ((4)+1);
+614: /* MUTANT (rep_const) */                return ((4)-1);
+616: /* MUTANT (rep_const) */                return 0;
+616: /* MUTANT (rep_const) */                return 1;
+616: /* MUTANT (rep_const) */                return -1;
+616: /* MUTANT (rep_const) */                return ((4)+1);
+616: /* MUTANT (rep_const) */                return ((4)-1);
+618: /* MUTANT (rep_const) */                return 0;
+618: /* MUTANT (rep_const) */                return 1;
+618: /* MUTANT (rep_const) */                return -1;
+618: /* MUTANT (rep_const) */                return ((3)+1);
+618: /* MUTANT (rep_const) */                return ((3)-1);
+620: /* MUTANT (rep_const) */                return 0;
+620: /* MUTANT (rep_const) */                return 1;
+620: /* MUTANT (rep_const) */                return -1;
+620: /* MUTANT (rep_const) */                return ((4)+1);
+620: /* MUTANT (rep_const) */                return ((4)-1);
+622: /* MUTANT (rep_const) */                return 0;
+622: /* MUTANT (rep_const) */                return 1;
+622: /* MUTANT (rep_const) */                return -1;
+622: /* MUTANT (rep_const) */                return ((3)+1);
+622: /* MUTANT (rep_const) */                return ((3)-1);
+624: /* MUTANT (rep_const) */                return 0;
+624: /* MUTANT (rep_const) */                return 1;
+624: /* MUTANT (rep_const) */                return -1;
+624: /* MUTANT (rep_const) */                return ((5)+1);
+624: /* MUTANT (rep_const) */                return ((5)-1);
+626: /* MUTANT (rep_const) */                return 0;
+626: /* MUTANT (rep_const) */                return 1;
+626: /* MUTANT (rep_const) */                return -1;
+626: /* MUTANT (rep_const) */                return ((3)+1);
+626: /* MUTANT (rep_const) */                return ((3)-1);
+628: /* MUTANT (rep_const) */                return 0;
+628: /* MUTANT (rep_const) */                return 1;
+628: /* MUTANT (rep_const) */                return -1;
+628: /* MUTANT (rep_const) */                return ((5)+1);
+628: /* MUTANT (rep_const) */                return ((5)-1);
+630: /* MUTANT (rep_const) */                return 0;
+630: /* MUTANT (rep_const) */                return 1;
+630: /* MUTANT (rep_const) */                return -1;
+630: /* MUTANT (rep_const) */                return ((3)+1);
+630: /* MUTANT (rep_const) */                return ((3)-1);
+632: /* MUTANT (rep_const) */                return 0;
+632: /* MUTANT (rep_const) */                return 1;
+632: /* MUTANT (rep_const) */                return -1;
+632: /* MUTANT (rep_const) */                return ((4)+1);
+632: /* MUTANT (rep_const) */                return ((4)-1);
+634: /* MUTANT (rep_const) */                return 0;
+634: /* MUTANT (rep_const) */                return 1;
+634: /* MUTANT (rep_const) */                return -1;
+634: /* MUTANT (rep_const) */                return ((2)+1);
+634: /* MUTANT (rep_const) */                return ((2)-1);
+636: /* MUTANT (rep_const) */                return 0;
+636: /* MUTANT (rep_const) */                return 1;
+636: /* MUTANT (rep_const) */                return -1;
+636: /* MUTANT (rep_const) */                return ((5)+1);
+636: /* MUTANT (rep_const) */                return ((5)-1);
+638: /* MUTANT (rep_const) */                return 0;
+638: /* MUTANT (rep_const) */                return 1;
+638: /* MUTANT (rep_const) */                return -1;
+638: /* MUTANT (rep_const) */                return ((4)+1);
+638: /* MUTANT (rep_const) */                return ((4)-1);
+640: /* MUTANT (rep_const) */                return 0;
+640: /* MUTANT (rep_const) */                return 1;
+640: /* MUTANT (rep_const) */                return -1;
+640: /* MUTANT (rep_const) */                return ((4)+1);
+640: /* MUTANT (rep_const) */                return ((4)-1);
+642: /* MUTANT (rep_const) */                return 0;
+642: /* MUTANT (rep_const) */                return 1;
+642: /* MUTANT (rep_const) */                return -1;
+642: /* MUTANT (rep_const) */                return ((4)+1);
+642: /* MUTANT (rep_const) */                return ((4)-1);
+645: /* MUTANT (rep_const) */        return 0;
+645: /* MUTANT (rep_const) */        return 1;
+645: /* MUTANT (rep_const) */        return ((-1)+1);
+645: /* MUTANT (rep_const) */        return ((-1)-1);
+650: /* MUTANT (del_stmt) */ /*         int i; */ 
+651: /* MUTANT (del_stmt) */ /*         int j; */ 
+652: /* MUTANT (del_stmt) */ /*         int k; */ 
+653: /* MUTANT (del_stmt) */ /*         int x; */ 
+654: /* MUTANT (del_stmt) */ /*         int index; */ 
+655: /* MUTANT (del_stmt) */ /*         int currentPlayer = whoseTurn(state); */ 
+656: /* MUTANT (del_stmt) */ /*         int nextPlayer = currentPlayer + 1; */ 
+656: /* MUTANT (rep_op) */        int nextPlayer = currentPlayer - 1;
+656: /* MUTANT (rep_op) */        int nextPlayer = currentPlayer * 1;
+656: /* MUTANT (rep_op) */        int nextPlayer = currentPlayer % 1;
+656: /* MUTANT (rep_const) */        int nextPlayer = currentPlayer + 0;
+656: /* MUTANT (rep_const) */        int nextPlayer = currentPlayer + -1;
+656: /* MUTANT (rep_const) */        int nextPlayer = currentPlayer + ((1)+1);
+658: /* MUTANT (del_stmt) */ /*         int tributeRevealedCards[2] = {-1, -1}; */ 
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[0] = {-1, -1};
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[1] = {-1, -1};
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[-1] = {-1, -1};
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[((2)+1)] = {-1, -1};
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[((2)-1)] = {-1, -1};
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[2] = {0, -1};
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[2] = {1, -1};
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[2] = {((-1)+1), -1};
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[2] = {((-1)-1), -1};
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[2] = {-1, 0};
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[2] = {-1, 1};
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[2] = {-1, ((-1)+1)};
+658: /* MUTANT (rep_const) */        int tributeRevealedCards[2] = {-1, ((-1)-1)};
+659: /* MUTANT (del_stmt) */ /*         int temphand[MAX_HAND]; */ // moved above the if statement
+660: /* MUTANT (del_stmt) */ /*         int drawntreasure=0; */ 
+660: /* MUTANT (rep_const) */        int drawntreasure=1;
+660: /* MUTANT (rep_const) */        int drawntreasure=-1;
+662: /* MUTANT (del_stmt) */ /*         int z = 0; */ // this is the counter for the temp hand
+662: /* MUTANT (rep_const) */        int z = 1;// this is the counter for the temp hand
+662: /* MUTANT (rep_const) */        int z = -1;// this is the counter for the temp hand
+663: /* MUTANT (rep_op) */        if (nextPlayer <= (state->numPlayers - 1)) {
+663: /* MUTANT (rep_op) */        if (nextPlayer < (state->numPlayers - 1)) {
+663: /* MUTANT (rep_op) */        if (nextPlayer >= (state->numPlayers - 1)) {
+663: /* MUTANT (rep_op) */        if (nextPlayer == (state->numPlayers - 1)) {
+663: /* MUTANT (rep_op) */        if (nextPlayer != (state->numPlayers - 1)) {
+663: /* MUTANT (rep_const) */        if (nextPlayer > (state->numPlayers - 0)) {
+663: /* MUTANT (rep_const) */        if (nextPlayer > (state->numPlayers - -1)) {
+663: /* MUTANT (rep_const) */        if (nextPlayer > (state->numPlayers - ((1)+1))) {
+663: /* MUTANT (negate) */        if(! (nextPlayer > (state->numPlayers - 1))) {
+664: /* MUTANT (del_stmt) */ /*                 nextPlayer = 0; */ 
+664: /* MUTANT (rep_const) */                nextPlayer = 1;
+664: /* MUTANT (rep_const) */                nextPlayer = -1;
+676: /* MUTANT (rep_op) */                for (i = 0; i <= 4; i++)
+676: /* MUTANT (rep_op) */                for (i = 0; i > 4; i++)
+676: /* MUTANT (rep_op) */                for (i = 0; i >= 4; i++)
+676: /* MUTANT (rep_op) */                for (i = 0; i == 4; i++)
+676: /* MUTANT (rep_op) */                for (i = 0; i != 4; i++)
+676: /* MUTANT (rep_op) */                for (i = 0; i < 4; i--)
+676: /* MUTANT (rep_const) */                for (i = 1; i < 4; i++)
+676: /* MUTANT (rep_const) */                for (i = -1; i < 4; i++)
+676: /* MUTANT (rep_const) */                for (i = 0; i < 0; i++)
+676: /* MUTANT (rep_const) */                for (i = 0; i < 1; i++)
+676: /* MUTANT (rep_const) */                for (i = 0; i < -1; i++)
+676: /* MUTANT (rep_const) */                for (i = 0; i < ((4)+1); i++)
+676: /* MUTANT (rep_const) */                for (i = 0; i < ((4)-1); i++)
+678: /* MUTANT (del_stmt) */ /*                         drawCard(currentPlayer, state); */ 
+682: /* MUTANT (rep_op) */                state->numBuys--;
+685: /* MUTANT (rep_op) */                for (i = 0; i <= state->numPlayers; i++)
+685: /* MUTANT (rep_op) */                for (i = 0; i > state->numPlayers; i++)
+685: /* MUTANT (rep_op) */                for (i = 0; i >= state->numPlayers; i++)
+685: /* MUTANT (rep_op) */                for (i = 0; i == state->numPlayers; i++)
+685: /* MUTANT (rep_op) */                for (i = 0; i != state->numPlayers; i++)
+685: /* MUTANT (rep_op) */                for (i = 0; i < state->numPlayers; i--)
+685: /* MUTANT (rep_const) */                for (i = 1; i < state->numPlayers; i++)
+685: /* MUTANT (rep_const) */                for (i = -1; i < state->numPlayers; i++)
+687: /* MUTANT (rep_op) */                        if ( i == currentPlayer )
+687: /* MUTANT (negate) */                        if(! ( i != currentPlayer ))
+689: /* MUTANT (del_stmt) */ /*                                 drawCard(i, state); */ 
+694: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, 1);
+694: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, -1);
+696: /* MUTANT (del_stmt) */ /*                 return 0; */ 
+696: /* MUTANT (rep_const) */                return 1;
+696: /* MUTANT (rep_const) */                return -1;
+701: /* MUTANT (rep_op) */                for (i = 0; i < state->handCount[currentPlayer]; i++) {
+701: /* MUTANT (rep_op) */                for (i = 0; i > state->handCount[currentPlayer]; i++) {
+701: /* MUTANT (rep_op) */                for (i = 0; i >= state->handCount[currentPlayer]; i++) {
+701: /* MUTANT (rep_op) */                for (i = 0; i == state->handCount[currentPlayer]; i++) {
+701: /* MUTANT (rep_op) */                for (i = 0; i != state->handCount[currentPlayer]; i++) {
+701: /* MUTANT (rep_op) */                for (i = 0; i <= state->handCount[currentPlayer]; i--) {
+701: /* MUTANT (rep_const) */                for (i = 1; i <= state->handCount[currentPlayer]; i++) {
+701: /* MUTANT (rep_const) */                for (i = -1; i <= state->handCount[currentPlayer]; i++) {
+702: /* MUTANT (del_stmt) */ /*                         temphand[i] = state->hand[currentPlayer][i]; */ //Backup card
+703: /* MUTANT (del_stmt) */ /*                         state->hand[currentPlayer][i] = -1; */ //Set to nothing
+703: /* MUTANT (rep_const) */                        state->hand[currentPlayer][i] = 0;//Set to nothing
+703: /* MUTANT (rep_const) */                        state->hand[currentPlayer][i] = 1;//Set to nothing
+703: /* MUTANT (rep_const) */                        state->hand[currentPlayer][i] = ((-1)+1);//Set to nothing
+703: /* MUTANT (rep_const) */                        state->hand[currentPlayer][i] = ((-1)-1);//Set to nothing
+708: /* MUTANT (rep_const) */                updateCoins(currentPlayer, state, 0);
+708: /* MUTANT (rep_const) */                updateCoins(currentPlayer, state, 1);
+708: /* MUTANT (rep_const) */                updateCoins(currentPlayer, state, -1);
+708: /* MUTANT (rep_const) */                updateCoins(currentPlayer, state, ((5)+1));
+708: /* MUTANT (rep_const) */                updateCoins(currentPlayer, state, ((5)-1));
+709: /* MUTANT (del_stmt) */ /*                 x = 1; */ //Condition to loop on
+709: /* MUTANT (rep_const) */                x = 0;//Condition to loop on
+709: /* MUTANT (rep_const) */                x = -1;//Condition to loop on
+709: /* MUTANT (rep_const) */                x = ((1)+1);//Condition to loop on
+710: /* MUTANT (rep_op) */                while( x != 1) {//Buy one card
+710: /* MUTANT (rep_const) */                while( x == 0) {//Buy one card
+710: /* MUTANT (rep_const) */                while( x == -1) {//Buy one card
+710: /* MUTANT (rep_const) */                while( x == ((1)+1)) {//Buy one card
+710: /* MUTANT (negate) */                while(!( x == 1)) {//Buy one card
+711: /* MUTANT (rep_op) */                        if (supplyCount(choice1, state) < 0) {
+711: /* MUTANT (rep_op) */                        if (supplyCount(choice1, state) > 0) {
+711: /* MUTANT (rep_op) */                        if (supplyCount(choice1, state) >= 0) {
+711: /* MUTANT (rep_op) */                        if (supplyCount(choice1, state) == 0) {
+711: /* MUTANT (rep_op) */                        if (supplyCount(choice1, state) != 0) {
+711: /* MUTANT (rep_const) */                        if (supplyCount(choice1, state) <= 1) {
+711: /* MUTANT (rep_const) */                        if (supplyCount(choice1, state) <= -1) {
+711: /* MUTANT (negate) */                        if(! (supplyCount(choice1, state) <= 0)) {
+712: /* MUTANT (negate) */                                if(! (DEBUG))
+715: /* MUTANT (negate) */                                if(! (DEBUG)) {
+716: /* MUTANT (del_stmt) */ /*                                         printf("Cards Left: %d\n", supplyCount(choice1, state)); */ 
+719: /* MUTANT (rep_op) */                        else if (state->coins <= getCost(choice1)) {
+719: /* MUTANT (rep_op) */                        else if (state->coins > getCost(choice1)) {
+719: /* MUTANT (rep_op) */                        else if (state->coins >= getCost(choice1)) {
+719: /* MUTANT (rep_op) */                        else if (state->coins == getCost(choice1)) {
+719: /* MUTANT (rep_op) */                        else if (state->coins != getCost(choice1)) {
+719: /* MUTANT (negate) */                        else if(! (state->coins < getCost(choice1))) {
+720: /* MUTANT (del_stmt) */ /*                                 printf("That card is too expensive!\n"); */ 
+722: /* MUTANT (negate) */                                if(! (DEBUG)) {
+723: /* MUTANT (del_stmt) */ /*                                         printf("Coins: %d < %d\n", state->coins, getCost(choice1)); */ 
+728: /* MUTANT (negate) */                                if(! (DEBUG)) {
+729: /* MUTANT (del_stmt) */ /*                                         printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]); */ 
+729: /* MUTANT (rep_op) */                                        printf("Deck Count: %d\n", state->handCount[currentPlayer] - state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
+729: /* MUTANT (rep_op) */                                        printf("Deck Count: %d\n", state->handCount[currentPlayer] * state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
+729: /* MUTANT (rep_op) */                                        printf("Deck Count: %d\n", state->handCount[currentPlayer] % state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
+729: /* MUTANT (rep_op) */                                        printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] - state->discardCount[currentPlayer]);
+729: /* MUTANT (rep_op) */                                        printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] * state->discardCount[currentPlayer]);
+729: /* MUTANT (rep_op) */                                        printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] % state->discardCount[currentPlayer]);
+732: /* MUTANT (rep_const) */                                gainCard(choice1, state, 1, currentPlayer);//Gain the card
+732: /* MUTANT (rep_const) */                                gainCard(choice1, state, -1, currentPlayer);//Gain the card
+733: /* MUTANT (del_stmt) */ /*                                 x = 0; */ //No more buying cards
+733: /* MUTANT (rep_const) */                                x = 1;//No more buying cards
+733: /* MUTANT (rep_const) */                                x = -1;//No more buying cards
+735: /* MUTANT (negate) */                                if(! (DEBUG)) {
+736: /* MUTANT (del_stmt) */ /*                                         printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] + state->discardCount[currentPlayer]); */ 
+736: /* MUTANT (rep_op) */                                        printf("Deck Count: %d\n", state->handCount[currentPlayer] - state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
+736: /* MUTANT (rep_op) */                                        printf("Deck Count: %d\n", state->handCount[currentPlayer] * state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
+736: /* MUTANT (rep_op) */                                        printf("Deck Count: %d\n", state->handCount[currentPlayer] % state->deckCount[currentPlayer] + state->discardCount[currentPlayer]);
+736: /* MUTANT (rep_op) */                                        printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] - state->discardCount[currentPlayer]);
+736: /* MUTANT (rep_op) */                                        printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] * state->discardCount[currentPlayer]);
+736: /* MUTANT (rep_op) */                                        printf("Deck Count: %d\n", state->handCount[currentPlayer] + state->deckCount[currentPlayer] % state->discardCount[currentPlayer]);
+743: /* MUTANT (rep_op) */                for (i = 0; i < state->handCount[currentPlayer]; i++) {
+743: /* MUTANT (rep_op) */                for (i = 0; i > state->handCount[currentPlayer]; i++) {
+743: /* MUTANT (rep_op) */                for (i = 0; i >= state->handCount[currentPlayer]; i++) {
+743: /* MUTANT (rep_op) */                for (i = 0; i == state->handCount[currentPlayer]; i++) {
+743: /* MUTANT (rep_op) */                for (i = 0; i != state->handCount[currentPlayer]; i++) {
+743: /* MUTANT (rep_op) */                for (i = 0; i <= state->handCount[currentPlayer]; i--) {
+743: /* MUTANT (rep_const) */                for (i = 1; i <= state->handCount[currentPlayer]; i++) {
+743: /* MUTANT (rep_const) */                for (i = -1; i <= state->handCount[currentPlayer]; i++) {
+744: /* MUTANT (del_stmt) */ /*                         state->hand[currentPlayer][i] = temphand[i]; */ 
+745: /* MUTANT (del_stmt) */ /*                         temphand[i] = -1; */ 
+745: /* MUTANT (rep_const) */                        temphand[i] = 0;
+745: /* MUTANT (rep_const) */                        temphand[i] = 1;
+745: /* MUTANT (rep_const) */                        temphand[i] = ((-1)+1);
+745: /* MUTANT (rep_const) */                        temphand[i] = ((-1)-1);
+749: /* MUTANT (rep_const) */                return 1;
+749: /* MUTANT (rep_const) */                return -1;
+752: /* MUTANT (rep_const) */                return 0;
+752: /* MUTANT (rep_const) */                return 1;
+752: /* MUTANT (rep_const) */                return ((-1)+1);
+752: /* MUTANT (rep_const) */                return ((-1)-1);
+757: /* MUTANT (rep_op) */                if (state->hand[currentPlayer][choice1] <= copper || state->hand[currentPlayer][choice1] > gold)
+757: /* MUTANT (rep_op) */                if (state->hand[currentPlayer][choice1] > copper || state->hand[currentPlayer][choice1] > gold)
+757: /* MUTANT (rep_op) */                if (state->hand[currentPlayer][choice1] >= copper || state->hand[currentPlayer][choice1] > gold)
+757: /* MUTANT (rep_op) */                if (state->hand[currentPlayer][choice1] == copper || state->hand[currentPlayer][choice1] > gold)
+757: /* MUTANT (rep_op) */                if (state->hand[currentPlayer][choice1] != copper || state->hand[currentPlayer][choice1] > gold)
+757: /* MUTANT (rep_op) */                if (state->hand[currentPlayer][choice1] < copper && state->hand[currentPlayer][choice1] > gold)
+757: /* MUTANT (rep_op) */                if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] <= gold)
+757: /* MUTANT (rep_op) */                if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] < gold)
+757: /* MUTANT (rep_op) */                if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] >= gold)
+757: /* MUTANT (rep_op) */                if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] == gold)
+757: /* MUTANT (rep_op) */                if (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] != gold)
+757: /* MUTANT (negate) */                if(! (state->hand[currentPlayer][choice1] < copper || state->hand[currentPlayer][choice1] > gold))
+759: /* MUTANT (del_stmt) */ /*                         return -1; */ 
+759: /* MUTANT (rep_const) */                        return 0;
+759: /* MUTANT (rep_const) */                        return 1;
+759: /* MUTANT (rep_const) */                        return ((-1)+1);
+759: /* MUTANT (rep_const) */                        return ((-1)-1);
+762: /* MUTANT (rep_op) */                if (choice2 <= treasure_map || choice2 < curse)
+762: /* MUTANT (rep_op) */                if (choice2 < treasure_map || choice2 < curse)
+762: /* MUTANT (rep_op) */                if (choice2 >= treasure_map || choice2 < curse)
+762: /* MUTANT (rep_op) */                if (choice2 == treasure_map || choice2 < curse)
+762: /* MUTANT (rep_op) */                if (choice2 != treasure_map || choice2 < curse)
+762: /* MUTANT (rep_op) */                if (choice2 > treasure_map && choice2 < curse)
+762: /* MUTANT (rep_op) */                if (choice2 > treasure_map || choice2 <= curse)
+762: /* MUTANT (rep_op) */                if (choice2 > treasure_map || choice2 > curse)
+762: /* MUTANT (rep_op) */                if (choice2 > treasure_map || choice2 >= curse)
+762: /* MUTANT (rep_op) */                if (choice2 > treasure_map || choice2 == curse)
+762: /* MUTANT (rep_op) */                if (choice2 > treasure_map || choice2 != curse)
+762: /* MUTANT (negate) */                if(! (choice2 > treasure_map || choice2 < curse))
+764: /* MUTANT (del_stmt) */ /*                         return -1; */ 
+764: /* MUTANT (rep_const) */                        return 0;
+764: /* MUTANT (rep_const) */                        return 1;
+764: /* MUTANT (rep_const) */                        return ((-1)+1);
+764: /* MUTANT (rep_const) */                        return ((-1)-1);
+767: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) - 3) > getCost(choice2) )
+767: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) * 3) > getCost(choice2) )
+767: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) % 3) > getCost(choice2) )
+767: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 3) <= getCost(choice2) )
+767: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 3) < getCost(choice2) )
+767: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 3) >= getCost(choice2) )
+767: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 3) == getCost(choice2) )
+767: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 3) != getCost(choice2) )
+767: /* MUTANT (rep_const) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 0) > getCost(choice2) )
+767: /* MUTANT (rep_const) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 1) > getCost(choice2) )
+767: /* MUTANT (rep_const) */                if ( (getCost(state->hand[currentPlayer][choice1]) + -1) > getCost(choice2) )
+767: /* MUTANT (rep_const) */                if ( (getCost(state->hand[currentPlayer][choice1]) + ((3)+1)) > getCost(choice2) )
+767: /* MUTANT (rep_const) */                if ( (getCost(state->hand[currentPlayer][choice1]) + ((3)-1)) > getCost(choice2) )
+767: /* MUTANT (negate) */                if(! ( (getCost(state->hand[currentPlayer][choice1]) + 3) > getCost(choice2) ))
+769: /* MUTANT (del_stmt) */ /*                         return -1; */ 
+769: /* MUTANT (rep_const) */                        return 0;
+769: /* MUTANT (rep_const) */                        return 1;
+769: /* MUTANT (rep_const) */                        return ((-1)+1);
+769: /* MUTANT (rep_const) */                        return ((-1)-1);
+772: /* MUTANT (rep_const) */                gainCard(choice2, state, 0, currentPlayer);
+772: /* MUTANT (rep_const) */                gainCard(choice2, state, 1, currentPlayer);
+772: /* MUTANT (rep_const) */                gainCard(choice2, state, -1, currentPlayer);
+772: /* MUTANT (rep_const) */                gainCard(choice2, state, ((2)+1), currentPlayer);
+772: /* MUTANT (rep_const) */                gainCard(choice2, state, ((2)-1), currentPlayer);
+775: /* MUTANT (del_stmt) */ /*                 discardCard(handPos, currentPlayer, state, 0); */ 
+775: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, 1);
+775: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, -1);
+778: /* MUTANT (rep_op) */                for (i = 0; i <= state->handCount[currentPlayer]; i++)
+778: /* MUTANT (rep_op) */                for (i = 0; i > state->handCount[currentPlayer]; i++)
+778: /* MUTANT (rep_op) */                for (i = 0; i >= state->handCount[currentPlayer]; i++)
+778: /* MUTANT (rep_op) */                for (i = 0; i == state->handCount[currentPlayer]; i++)
+778: /* MUTANT (rep_op) */                for (i = 0; i != state->handCount[currentPlayer]; i++)
+778: /* MUTANT (rep_op) */                for (i = 0; i < state->handCount[currentPlayer]; i--)
+778: /* MUTANT (rep_const) */                for (i = 1; i < state->handCount[currentPlayer]; i++)
+778: /* MUTANT (rep_const) */                for (i = -1; i < state->handCount[currentPlayer]; i++)
+780: /* MUTANT (rep_op) */                        if (state->hand[currentPlayer][i] != j)
+780: /* MUTANT (negate) */                        if(! (state->hand[currentPlayer][i] == j))
+782: /* MUTANT (del_stmt) */ /*                                 discardCard(i, currentPlayer, state, 0); */ 
+782: /* MUTANT (rep_const) */                                discardCard(i, currentPlayer, state, 1);
+782: /* MUTANT (rep_const) */                                discardCard(i, currentPlayer, state, -1);
+783: /* MUTANT (del_stmt) */ /*                                 break; */ 
+787: /* MUTANT (rep_const) */                return 1;
+787: /* MUTANT (rep_const) */                return -1;
+792: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) - 2) > getCost(choice2) )
+792: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) * 2) > getCost(choice2) )
+792: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) % 2) > getCost(choice2) )
+792: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 2) <= getCost(choice2) )
+792: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 2) < getCost(choice2) )
+792: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 2) >= getCost(choice2) )
+792: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 2) == getCost(choice2) )
+792: /* MUTANT (rep_op) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 2) != getCost(choice2) )
+792: /* MUTANT (rep_const) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 0) > getCost(choice2) )
+792: /* MUTANT (rep_const) */                if ( (getCost(state->hand[currentPlayer][choice1]) + 1) > getCost(choice2) )
+792: /* MUTANT (rep_const) */                if ( (getCost(state->hand[currentPlayer][choice1]) + -1) > getCost(choice2) )
+792: /* MUTANT (rep_const) */                if ( (getCost(state->hand[currentPlayer][choice1]) + ((2)+1)) > getCost(choice2) )
+792: /* MUTANT (rep_const) */                if ( (getCost(state->hand[currentPlayer][choice1]) + ((2)-1)) > getCost(choice2) )
+792: /* MUTANT (negate) */                if(! ( (getCost(state->hand[currentPlayer][choice1]) + 2) > getCost(choice2) ))
+794: /* MUTANT (del_stmt) */ /*                         return -1; */ 
+794: /* MUTANT (rep_const) */                        return 0;
+794: /* MUTANT (rep_const) */                        return 1;
+794: /* MUTANT (rep_const) */                        return ((-1)+1);
+794: /* MUTANT (rep_const) */                        return ((-1)-1);
+797: /* MUTANT (rep_const) */                gainCard(choice2, state, 1, currentPlayer);
+797: /* MUTANT (rep_const) */                gainCard(choice2, state, -1, currentPlayer);
+800: /* MUTANT (del_stmt) */ /*                 discardCard(handPos, currentPlayer, state, 0); */ 
+800: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, 1);
+800: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, -1);
+803: /* MUTANT (rep_op) */                for (i = 0; i <= state->handCount[currentPlayer]; i++)
+803: /* MUTANT (rep_op) */                for (i = 0; i > state->handCount[currentPlayer]; i++)
+803: /* MUTANT (rep_op) */                for (i = 0; i >= state->handCount[currentPlayer]; i++)
+803: /* MUTANT (rep_op) */                for (i = 0; i == state->handCount[currentPlayer]; i++)
+803: /* MUTANT (rep_op) */                for (i = 0; i != state->handCount[currentPlayer]; i++)
+803: /* MUTANT (rep_op) */                for (i = 0; i < state->handCount[currentPlayer]; i--)
+803: /* MUTANT (rep_const) */                for (i = 1; i < state->handCount[currentPlayer]; i++)
+803: /* MUTANT (rep_const) */                for (i = -1; i < state->handCount[currentPlayer]; i++)
+805: /* MUTANT (rep_op) */                        if (state->hand[currentPlayer][i] != j)
+805: /* MUTANT (negate) */                        if(! (state->hand[currentPlayer][i] == j))
+807: /* MUTANT (del_stmt) */ /*                                 discardCard(i, currentPlayer, state, 0); */ 
+807: /* MUTANT (rep_const) */                                discardCard(i, currentPlayer, state, 1);
+807: /* MUTANT (rep_const) */                                discardCard(i, currentPlayer, state, -1);
+808: /* MUTANT (del_stmt) */ /*                                 break; */ 
+813: /* MUTANT (rep_const) */                return 1;
+813: /* MUTANT (rep_const) */                return -1;
+823: /* MUTANT (del_stmt) */ /*                 state->numActions = state->numActions + 2; */ 
+823: /* MUTANT (rep_op) */                state->numActions = state->numActions - 2;
+823: /* MUTANT (rep_op) */                state->numActions = state->numActions * 2;
+823: /* MUTANT (rep_op) */                state->numActions = state->numActions % 2;
+823: /* MUTANT (rep_const) */                state->numActions = state->numActions + 0;
+823: /* MUTANT (rep_const) */                state->numActions = state->numActions + 1;
+823: /* MUTANT (rep_const) */                state->numActions = state->numActions + -1;
+823: /* MUTANT (rep_const) */                state->numActions = state->numActions + ((2)+1);
+823: /* MUTANT (rep_const) */                state->numActions = state->numActions + ((2)-1);
+826: /* MUTANT (del_stmt) */ /*                 discardCard(handPos, currentPlayer, state, 0); */ 
+826: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, 1);
+826: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, -1);
+827: /* MUTANT (del_stmt) */ /*                 return 0; */ 
+827: /* MUTANT (rep_const) */                return 1;
+827: /* MUTANT (rep_const) */                return -1;
+837: /* MUTANT (del_stmt) */ /*                 state->numActions++; */ 
+837: /* MUTANT (rep_op) */                state->numActions--;
+840: /* MUTANT (del_stmt) */ /*                 discardCard(handPos, currentPlayer, state, 0); */ 
+840: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, 1);
+840: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, -1);
+841: /* MUTANT (del_stmt) */ /*                 return 0; */ 
+841: /* MUTANT (rep_const) */                return 1;
+841: /* MUTANT (rep_const) */                return -1;
+850: /* MUTANT (rep_op) */                if ((state->discardCount[nextPlayer] - state->deckCount[nextPlayer]) <= 1) {
+850: /* MUTANT (rep_op) */                if ((state->discardCount[nextPlayer] * state->deckCount[nextPlayer]) <= 1) {
+850: /* MUTANT (rep_op) */                if ((state->discardCount[nextPlayer] % state->deckCount[nextPlayer]) <= 1) {
+850: /* MUTANT (rep_op) */                if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) < 1) {
+850: /* MUTANT (rep_op) */                if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) > 1) {
+850: /* MUTANT (rep_op) */                if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) >= 1) {
+850: /* MUTANT (rep_op) */                if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) == 1) {
+850: /* MUTANT (rep_op) */                if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) != 1) {
+850: /* MUTANT (rep_const) */                if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) <= 0) {
+850: /* MUTANT (rep_const) */                if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) <= -1) {
+850: /* MUTANT (rep_const) */                if ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) <= ((1)+1)) {
+850: /* MUTANT (negate) */                if(! ((state->discardCount[nextPlayer] + state->deckCount[nextPlayer]) <= 1)) {
+851: /* MUTANT (rep_op) */                        if (state->deckCount[nextPlayer] <= 0) {
+851: /* MUTANT (rep_op) */                        if (state->deckCount[nextPlayer] < 0) {
+851: /* MUTANT (rep_op) */                        if (state->deckCount[nextPlayer] >= 0) {
+851: /* MUTANT (rep_op) */                        if (state->deckCount[nextPlayer] == 0) {
+851: /* MUTANT (rep_op) */                        if (state->deckCount[nextPlayer] != 0) {
+851: /* MUTANT (rep_const) */                        if (state->deckCount[nextPlayer] > 1) {
+851: /* MUTANT (rep_const) */                        if (state->deckCount[nextPlayer] > -1) {
+851: /* MUTANT (negate) */                        if(! (state->deckCount[nextPlayer] > 0)) {
+852: /* MUTANT (del_stmt) */ /*                                 tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1]; */ 
+852: /* MUTANT (rep_const) */                                tributeRevealedCards[1] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+852: /* MUTANT (rep_const) */                                tributeRevealedCards[-1] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+852: /* MUTANT (rep_const) */                                tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]0];
+852: /* MUTANT (rep_const) */                                tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]1];
+852: /* MUTANT (rep_const) */                                tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]((-1)+1)];
+852: /* MUTANT (rep_const) */                                tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]((-1)-1)];
+853: /* MUTANT (del_stmt) */ /*                                 state->deckCount[nextPlayer]--; */ 
+853: /* MUTANT (rep_op) */                                state->deckCount[nextPlayer]++;
+855: /* MUTANT (rep_op) */                        else if (state->discardCount[nextPlayer] <= 0) {
+855: /* MUTANT (rep_op) */                        else if (state->discardCount[nextPlayer] < 0) {
+855: /* MUTANT (rep_op) */                        else if (state->discardCount[nextPlayer] >= 0) {
+855: /* MUTANT (rep_op) */                        else if (state->discardCount[nextPlayer] == 0) {
+855: /* MUTANT (rep_op) */                        else if (state->discardCount[nextPlayer] != 0) {
+855: /* MUTANT (rep_const) */                        else if (state->discardCount[nextPlayer] > 1) {
+855: /* MUTANT (rep_const) */                        else if (state->discardCount[nextPlayer] > -1) {
+855: /* MUTANT (negate) */                        else if(! (state->discardCount[nextPlayer] > 0)) {
+856: /* MUTANT (del_stmt) */ /*                                 tributeRevealedCards[0] = state->discard[nextPlayer][state->discardCount[nextPlayer]-1]; */ 
+856: /* MUTANT (rep_const) */                                tributeRevealedCards[1] = state->discard[nextPlayer][state->discardCount[nextPlayer]-1];
+856: /* MUTANT (rep_const) */                                tributeRevealedCards[-1] = state->discard[nextPlayer][state->discardCount[nextPlayer]-1];
+856: /* MUTANT (rep_const) */                                tributeRevealedCards[0] = state->discard[nextPlayer][state->discardCount[nextPlayer]0];
+856: /* MUTANT (rep_const) */                                tributeRevealedCards[0] = state->discard[nextPlayer][state->discardCount[nextPlayer]1];
+856: /* MUTANT (rep_const) */                                tributeRevealedCards[0] = state->discard[nextPlayer][state->discardCount[nextPlayer]((-1)+1)];
+856: /* MUTANT (rep_const) */                                tributeRevealedCards[0] = state->discard[nextPlayer][state->discardCount[nextPlayer]((-1)-1)];
+857: /* MUTANT (del_stmt) */ /*                                 state->discardCount[nextPlayer]--; */ 
+857: /* MUTANT (rep_op) */                                state->discardCount[nextPlayer]++;
+861: /* MUTANT (negate) */                                if(! (DEBUG)) {
+862: /* MUTANT (del_stmt) */ /*                                         printf("No cards to reveal\n"); */ 
+868: /* MUTANT (rep_op) */                        if (state->deckCount[nextPlayer] != 0) {
+868: /* MUTANT (rep_const) */                        if (state->deckCount[nextPlayer] == 1) {
+868: /* MUTANT (rep_const) */                        if (state->deckCount[nextPlayer] == -1) {
+868: /* MUTANT (negate) */                        if(! (state->deckCount[nextPlayer] == 0)) {
+869: /* MUTANT (rep_op) */                                for (i = 0; i <= state->discardCount[nextPlayer]; i++) {
+869: /* MUTANT (rep_op) */                                for (i = 0; i > state->discardCount[nextPlayer]; i++) {
+869: /* MUTANT (rep_op) */                                for (i = 0; i >= state->discardCount[nextPlayer]; i++) {
+869: /* MUTANT (rep_op) */                                for (i = 0; i == state->discardCount[nextPlayer]; i++) {
+869: /* MUTANT (rep_op) */                                for (i = 0; i != state->discardCount[nextPlayer]; i++) {
+869: /* MUTANT (rep_op) */                                for (i = 0; i < state->discardCount[nextPlayer]; i--) {
+869: /* MUTANT (rep_const) */                                for (i = 1; i < state->discardCount[nextPlayer]; i++) {
+869: /* MUTANT (rep_const) */                                for (i = -1; i < state->discardCount[nextPlayer]; i++) {
+870: /* MUTANT (del_stmt) */ /*                                         state->deck[nextPlayer][i] = state->discard[nextPlayer][i]; */ //Move to deck
+871: /* MUTANT (del_stmt) */ /*                                         state->deckCount[nextPlayer]++; */ 
+871: /* MUTANT (rep_op) */                                        state->deckCount[nextPlayer]--;
+872: /* MUTANT (del_stmt) */ /*                                         state->discard[nextPlayer][i] = -1; */ 
+872: /* MUTANT (rep_const) */                                        state->discard[nextPlayer][i] = 0;
+872: /* MUTANT (rep_const) */                                        state->discard[nextPlayer][i] = 1;
+872: /* MUTANT (rep_const) */                                        state->discard[nextPlayer][i] = ((-1)+1);
+872: /* MUTANT (rep_const) */                                        state->discard[nextPlayer][i] = ((-1)-1);
+873: /* MUTANT (del_stmt) */ /*                                         state->discardCount[nextPlayer]--; */ 
+873: /* MUTANT (rep_op) */                                        state->discardCount[nextPlayer]++;
+878: /* MUTANT (rep_const) */                        tributeRevealedCards[1] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+878: /* MUTANT (rep_const) */                        tributeRevealedCards[-1] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+878: /* MUTANT (rep_const) */                        tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]0];
+878: /* MUTANT (rep_const) */                        tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]1];
+878: /* MUTANT (rep_const) */                        tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]((-1)+1)];
+878: /* MUTANT (rep_const) */                        tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]((-1)-1)];
+879: /* MUTANT (del_stmt) */ /*                         state->deck[nextPlayer][state->deckCount[nextPlayer]--] = -1; */ 
+879: /* MUTANT (rep_op) */                        state->deck[nextPlayer][state->deckCount[nextPlayer]++] = -1;
+879: /* MUTANT (rep_const) */                        state->deck[nextPlayer][state->deckCount[nextPlayer]--] = 0;
+879: /* MUTANT (rep_const) */                        state->deck[nextPlayer][state->deckCount[nextPlayer]--] = 1;
+879: /* MUTANT (rep_const) */                        state->deck[nextPlayer][state->deckCount[nextPlayer]--] = ((-1)+1);
+879: /* MUTANT (rep_const) */                        state->deck[nextPlayer][state->deckCount[nextPlayer]--] = ((-1)-1);
+880: /* MUTANT (del_stmt) */ /*                         state->deckCount[nextPlayer]--; */ 
+880: /* MUTANT (rep_op) */                        state->deckCount[nextPlayer]++;
+881: /* MUTANT (del_stmt) */ /*                         tributeRevealedCards[1] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1]; */ 
+881: /* MUTANT (rep_const) */                        tributeRevealedCards[0] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+881: /* MUTANT (rep_const) */                        tributeRevealedCards[-1] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+881: /* MUTANT (rep_const) */                        tributeRevealedCards[((1)+1)] = state->deck[nextPlayer][state->deckCount[nextPlayer]-1];
+881: /* MUTANT (rep_const) */                        tributeRevealedCards[1] = state->deck[nextPlayer][state->deckCount[nextPlayer]0];
+881: /* MUTANT (rep_const) */                        tributeRevealedCards[1] = state->deck[nextPlayer][state->deckCount[nextPlayer]1];
+881: /* MUTANT (rep_const) */                        tributeRevealedCards[1] = state->deck[nextPlayer][state->deckCount[nextPlayer]((-1)+1)];
+881: /* MUTANT (rep_const) */                        tributeRevealedCards[1] = state->deck[nextPlayer][state->deckCount[nextPlayer]((-1)-1)];
+882: /* MUTANT (del_stmt) */ /*                         state->deck[nextPlayer][state->deckCount[nextPlayer]--] = -1; */ 
+882: /* MUTANT (rep_op) */                        state->deck[nextPlayer][state->deckCount[nextPlayer]++] = -1;
+882: /* MUTANT (rep_const) */                        state->deck[nextPlayer][state->deckCount[nextPlayer]--] = 0;
+882: /* MUTANT (rep_const) */                        state->deck[nextPlayer][state->deckCount[nextPlayer]--] = 1;
+882: /* MUTANT (rep_const) */                        state->deck[nextPlayer][state->deckCount[nextPlayer]--] = ((-1)+1);
+882: /* MUTANT (rep_const) */                        state->deck[nextPlayer][state->deckCount[nextPlayer]--] = ((-1)-1);
+883: /* MUTANT (del_stmt) */ /*                         state->deckCount[nextPlayer]--; */ 
+883: /* MUTANT (rep_op) */                        state->deckCount[nextPlayer]++;
+886: /* MUTANT (rep_op) */                if (tributeRevealedCards[0] != tributeRevealedCards[1]) {//If we have a duplicate card, just drop one
+886: /* MUTANT (rep_const) */                if (tributeRevealedCards[1] == tributeRevealedCards[1]) {//If we have a duplicate card, just drop one
+886: /* MUTANT (rep_const) */                if (tributeRevealedCards[-1] == tributeRevealedCards[1]) {//If we have a duplicate card, just drop one
+886: /* MUTANT (rep_const) */                if (tributeRevealedCards[0] == tributeRevealedCards[0]) {//If we have a duplicate card, just drop one
+886: /* MUTANT (rep_const) */                if (tributeRevealedCards[0] == tributeRevealedCards[-1]) {//If we have a duplicate card, just drop one
+886: /* MUTANT (rep_const) */                if (tributeRevealedCards[0] == tributeRevealedCards[((1)+1)]) {//If we have a duplicate card, just drop one
+886: /* MUTANT (negate) */                if(! (tributeRevealedCards[0] == tributeRevealedCards[1])) {//If we have a duplicate card, just drop one
+887: /* MUTANT (del_stmt) */ /*                         state->playedCards[state->playedCardCount] = tributeRevealedCards[1]; */ 
+887: /* MUTANT (rep_const) */                        state->playedCards[state->playedCardCount] = tributeRevealedCards[0];
+887: /* MUTANT (rep_const) */                        state->playedCards[state->playedCardCount] = tributeRevealedCards[-1];
+887: /* MUTANT (rep_const) */                        state->playedCards[state->playedCardCount] = tributeRevealedCards[((1)+1)];
+888: /* MUTANT (del_stmt) */ /*                         state->playedCardCount++; */ 
+888: /* MUTANT (rep_op) */                        state->playedCardCount--;
+889: /* MUTANT (del_stmt) */ /*                         tributeRevealedCards[1] = -1; */ 
+889: /* MUTANT (rep_const) */                        tributeRevealedCards[0] = -1;
+889: /* MUTANT (rep_const) */                        tributeRevealedCards[-1] = -1;
+889: /* MUTANT (rep_const) */                        tributeRevealedCards[((1)+1)] = -1;
+889: /* MUTANT (rep_const) */                        tributeRevealedCards[1] = 0;
+889: /* MUTANT (rep_const) */                        tributeRevealedCards[1] = 1;
+889: /* MUTANT (rep_const) */                        tributeRevealedCards[1] = ((-1)+1);
+889: /* MUTANT (rep_const) */                        tributeRevealedCards[1] = ((-1)-1);
+892: /* MUTANT (rep_op) */                for (i = 0; i < 2; i++) {
+892: /* MUTANT (rep_op) */                for (i = 0; i > 2; i++) {
+892: /* MUTANT (rep_op) */                for (i = 0; i >= 2; i++) {
+892: /* MUTANT (rep_op) */                for (i = 0; i == 2; i++) {
+892: /* MUTANT (rep_op) */                for (i = 0; i != 2; i++) {
+892: /* MUTANT (rep_op) */                for (i = 0; i <= 2; i--) {
+892: /* MUTANT (rep_const) */                for (i = 1; i <= 2; i++) {
+892: /* MUTANT (rep_const) */                for (i = -1; i <= 2; i++) {
+892: /* MUTANT (rep_const) */                for (i = 0; i <= 0; i++) {
+892: /* MUTANT (rep_const) */                for (i = 0; i <= 1; i++) {
+892: /* MUTANT (rep_const) */                for (i = 0; i <= -1; i++) {
+892: /* MUTANT (rep_const) */                for (i = 0; i <= ((2)+1); i++) {
+892: /* MUTANT (rep_const) */                for (i = 0; i <= ((2)-1); i++) {
+893: /* MUTANT (rep_op) */                        if (tributeRevealedCards[i] != copper || tributeRevealedCards[i] == silver || tributeRevealedCards[i] == gold) {//Treasure cards
+893: /* MUTANT (rep_op) */                        if (tributeRevealedCards[i] == copper && tributeRevealedCards[i] == silver || tributeRevealedCards[i] == gold) {//Treasure cards
+893: /* MUTANT (rep_op) */                        if (tributeRevealedCards[i] == copper || tributeRevealedCards[i] != silver || tributeRevealedCards[i] == gold) {//Treasure cards
+893: /* MUTANT (rep_op) */                        if (tributeRevealedCards[i] == copper || tributeRevealedCards[i] == silver && tributeRevealedCards[i] == gold) {//Treasure cards
+893: /* MUTANT (rep_op) */                        if (tributeRevealedCards[i] == copper || tributeRevealedCards[i] == silver || tributeRevealedCards[i] != gold) {//Treasure cards
+893: /* MUTANT (negate) */                        if(! (tributeRevealedCards[i] == copper || tributeRevealedCards[i] == silver || tributeRevealedCards[i] == gold)) {//Treasure cards
+894: /* MUTANT (del_stmt) */ /*                                 state->coins += 2; */ 
+894: /* MUTANT (rep_op) */                                state->coins -= 2;
+894: /* MUTANT (rep_op) */                                state->coins *= 2;
+894: /* MUTANT (rep_op) */                                state->coins %= 2;
+894: /* MUTANT (rep_const) */                                state->coins += 0;
+894: /* MUTANT (rep_const) */                                state->coins += 1;
+894: /* MUTANT (rep_const) */                                state->coins += -1;
+894: /* MUTANT (rep_const) */                                state->coins += ((2)+1);
+894: /* MUTANT (rep_const) */                                state->coins += ((2)-1);
+897: /* MUTANT (rep_op) */                        else if (tributeRevealedCards[i] != estate || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == province || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall) {//Victory Card Found
+897: /* MUTANT (rep_op) */                        else if (tributeRevealedCards[i] == estate && tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == province || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall) {//Victory Card Found
+897: /* MUTANT (rep_op) */                        else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] != duchy || tributeRevealedCards[i] == province || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall) {//Victory Card Found
+897: /* MUTANT (rep_op) */                        else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == duchy && tributeRevealedCards[i] == province || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall) {//Victory Card Found
+897: /* MUTANT (rep_op) */                        else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] != province || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall) {//Victory Card Found
+897: /* MUTANT (rep_op) */                        else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == province && tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall) {//Victory Card Found
+897: /* MUTANT (rep_op) */                        else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == province || tributeRevealedCards[i] != gardens || tributeRevealedCards[i] == great_hall) {//Victory Card Found
+897: /* MUTANT (rep_op) */                        else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == province || tributeRevealedCards[i] == gardens && tributeRevealedCards[i] == great_hall) {//Victory Card Found
+897: /* MUTANT (rep_op) */                        else if (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == province || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] != great_hall) {//Victory Card Found
+897: /* MUTANT (negate) */                        else if(! (tributeRevealedCards[i] == estate || tributeRevealedCards[i] == duchy || tributeRevealedCards[i] == province || tributeRevealedCards[i] == gardens || tributeRevealedCards[i] == great_hall)) {//Victory Card Found
+898: /* MUTANT (del_stmt) */ /*                                 drawCard(currentPlayer, state); */ 
+899: /* MUTANT (del_stmt) */ /*                                 drawCard(currentPlayer, state); */ 
+902: /* MUTANT (del_stmt) */ /*                                 state->numActions = state->numActions + 2; */ 
+902: /* MUTANT (rep_op) */                                state->numActions = state->numActions - 2;
+902: /* MUTANT (rep_op) */                                state->numActions = state->numActions * 2;
+902: /* MUTANT (rep_op) */                                state->numActions = state->numActions % 2;
+902: /* MUTANT (rep_const) */                                state->numActions = state->numActions + 0;
+902: /* MUTANT (rep_const) */                                state->numActions = state->numActions + 1;
+902: /* MUTANT (rep_const) */                                state->numActions = state->numActions + -1;
+902: /* MUTANT (rep_const) */                                state->numActions = state->numActions + ((2)+1);
+902: /* MUTANT (rep_const) */                                state->numActions = state->numActions + ((2)-1);
+906: /* MUTANT (rep_const) */                return 1;
+906: /* MUTANT (rep_const) */                return -1;
+913: /* MUTANT (rep_const) */                updateCoins(currentPlayer, state, 0);
+913: /* MUTANT (rep_const) */                updateCoins(currentPlayer, state, 1);
+913: /* MUTANT (rep_const) */                updateCoins(currentPlayer, state, -1);
+913: /* MUTANT (rep_const) */                updateCoins(currentPlayer, state, ((2)+1));
+913: /* MUTANT (rep_const) */                updateCoins(currentPlayer, state, ((2)-1));
+914: /* MUTANT (rep_op) */                for (i = 0; i <= state->numPlayers; i++)
+914: /* MUTANT (rep_op) */                for (i = 0; i > state->numPlayers; i++)
+914: /* MUTANT (rep_op) */                for (i = 0; i >= state->numPlayers; i++)
+914: /* MUTANT (rep_op) */                for (i = 0; i == state->numPlayers; i++)
+914: /* MUTANT (rep_op) */                for (i = 0; i != state->numPlayers; i++)
+914: /* MUTANT (rep_op) */                for (i = 0; i < state->numPlayers; i--)
+914: /* MUTANT (rep_const) */                for (i = 1; i < state->numPlayers; i++)
+914: /* MUTANT (rep_const) */                for (i = -1; i < state->numPlayers; i++)
+916: /* MUTANT (rep_op) */                        if (i == currentPlayer)
+916: /* MUTANT (negate) */                        if(! (i != currentPlayer))
+918: /* MUTANT (rep_op) */                                for (j = 0; j <= state->handCount[i]; j++)
+918: /* MUTANT (rep_op) */                                for (j = 0; j > state->handCount[i]; j++)
+918: /* MUTANT (rep_op) */                                for (j = 0; j >= state->handCount[i]; j++)
+918: /* MUTANT (rep_op) */                                for (j = 0; j == state->handCount[i]; j++)
+918: /* MUTANT (rep_op) */                                for (j = 0; j != state->handCount[i]; j++)
+918: /* MUTANT (rep_op) */                                for (j = 0; j < state->handCount[i]; j--)
+918: /* MUTANT (rep_const) */                                for (j = 1; j < state->handCount[i]; j++)
+918: /* MUTANT (rep_const) */                                for (j = -1; j < state->handCount[i]; j++)
+920: /* MUTANT (rep_op) */                                        if (state->hand[i][j] != copper)
+920: /* MUTANT (negate) */                                        if(! (state->hand[i][j] == copper))
+922: /* MUTANT (del_stmt) */ /*                                                 discardCard(j, i, state, 0); */ 
+922: /* MUTANT (rep_const) */                                                discardCard(j, i, state, 1);
+922: /* MUTANT (rep_const) */                                                discardCard(j, i, state, -1);
+923: /* MUTANT (del_stmt) */ /*                                                 break; */ 
+925: /* MUTANT (rep_op) */                                        if (j != state->handCount[i])
+925: /* MUTANT (negate) */                                        if(! (j == state->handCount[i]))
+927: /* MUTANT (rep_op) */                                                for (k = 0; k <= state->handCount[i]; k++)
+927: /* MUTANT (rep_op) */                                                for (k = 0; k > state->handCount[i]; k++)
+927: /* MUTANT (rep_op) */                                                for (k = 0; k >= state->handCount[i]; k++)
+927: /* MUTANT (rep_op) */                                                for (k = 0; k == state->handCount[i]; k++)
+927: /* MUTANT (rep_op) */                                                for (k = 0; k != state->handCount[i]; k++)
+927: /* MUTANT (rep_op) */                                                for (k = 0; k < state->handCount[i]; k--)
+927: /* MUTANT (rep_const) */                                                for (k = 1; k < state->handCount[i]; k++)
+927: /* MUTANT (rep_const) */                                                for (k = -1; k < state->handCount[i]; k++)
+929: /* MUTANT (negate) */                                                        if(! (DEBUG))
+941: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, 1);
+941: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, -1);
+943: /* MUTANT (del_stmt) */ /*                 return 0; */ 
+943: /* MUTANT (rep_const) */                return 1;
+943: /* MUTANT (rep_const) */                return -1;
+951: /* MUTANT (rep_op) */                state->outpostPlayed--;
+954: /* MUTANT (del_stmt) */ /*                 discardCard(handPos, state->whoseTurn, state, 0); */ 
+954: /* MUTANT (rep_const) */                discardCard(handPos, state->whoseTurn, state, 1);
+954: /* MUTANT (rep_const) */                discardCard(handPos, state->whoseTurn, state, -1);
+955: /* MUTANT (del_stmt) */ /*                 return 0; */ 
+955: /* MUTANT (rep_const) */                return 1;
+955: /* MUTANT (rep_const) */                return -1;
+959: /* MUTANT (rep_op) */                state->numBuys--;
+961: /* MUTANT (negate) */                if(! (choice1))
+964: /* MUTANT (del_stmt) */ /*                         state->coins = state->coins + getCost( handCard(choice1, state) ); */ 
+964: /* MUTANT (rep_op) */                        state->coins = state->coins - getCost( handCard(choice1, state) );
+964: /* MUTANT (rep_op) */                        state->coins = state->coins * getCost( handCard(choice1, state) );
+964: /* MUTANT (rep_op) */                        state->coins = state->coins % getCost( handCard(choice1, state) );
+966: /* MUTANT (del_stmt) */ /*                         discardCard(choice1, currentPlayer, state, 1); */ 
+966: /* MUTANT (rep_const) */                        discardCard(choice1, currentPlayer, state, 0);
+966: /* MUTANT (rep_const) */                        discardCard(choice1, currentPlayer, state, -1);
+966: /* MUTANT (rep_const) */                        discardCard(choice1, currentPlayer, state, ((1)+1));
+970: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, 1);
+970: /* MUTANT (rep_const) */                discardCard(handPos, currentPlayer, state, -1);
+971: /* MUTANT (del_stmt) */ /*                 return 0; */ 
+971: /* MUTANT (rep_const) */                return 1;
+971: /* MUTANT (rep_const) */                return -1;
+974: /* MUTANT (rep_op) */                for (i = 0; i <= state->numPlayers; i++) {
+974: /* MUTANT (rep_op) */                for (i = 0; i > state->numPlayers; i++) {
+974: /* MUTANT (rep_op) */                for (i = 0; i >= state->numPlayers; i++) {
+974: /* MUTANT (rep_op) */                for (i = 0; i == state->numPlayers; i++) {
+974: /* MUTANT (rep_op) */                for (i = 0; i != state->numPlayers; i++) {
+974: /* MUTANT (rep_op) */                for (i = 0; i < state->numPlayers; i--) {
+974: /* MUTANT (rep_const) */                for (i = 1; i < state->numPlayers; i++) {
+974: /* MUTANT (rep_const) */                for (i = -1; i < state->numPlayers; i++) {
+975: /* MUTANT (rep_op) */                        if (i == currentPlayer) {
+975: /* MUTANT (negate) */                        if(! (i != currentPlayer)) {
+976: /* MUTANT (del_stmt) */ /*                                 state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--]; */           state->deckCount[i]--;
+976: /* MUTANT (del_stmt) */ /*                                 state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--]; */  /*           state->deckCount[i]--; */ 
+976: /* MUTANT (del_stmt) */                                state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--]; /*           state->deckCount[i]--; */ 
+976: /* MUTANT (rep_op) */                                state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]++];          state->deckCount[i]--;
+976: /* MUTANT (rep_op) */                                state->discard[i][state->discardCount[i]] = state->deck[i][state->deckCount[i]--];          state->deckCount[i]++;
+977: /* MUTANT (del_stmt) */ /*                                 state->discardCount[i]++; */ 
+977: /* MUTANT (rep_op) */                                state->discardCount[i]--;
+978: /* MUTANT (del_stmt) */ /*                                 state->deck[i][state->deckCount[i]--] = curse; */ //Top card now a curse
+978: /* MUTANT (rep_op) */                                state->deck[i][state->deckCount[i]++] = curse;//Top card now a curse
+981: /* MUTANT (rep_const) */                return 1;
+981: /* MUTANT (rep_const) */                return -1;
+985: /* MUTANT (rep_const) */                index = 0;
+985: /* MUTANT (rep_const) */                index = 1;
+985: /* MUTANT (rep_const) */                index = ((-1)+1);
+985: /* MUTANT (rep_const) */                index = ((-1)-1);
+986: /* MUTANT (rep_op) */                for (i = 0; i <= state->handCount[currentPlayer]; i++)
+986: /* MUTANT (rep_op) */                for (i = 0; i > state->handCount[currentPlayer]; i++)
+986: /* MUTANT (rep_op) */                for (i = 0; i >= state->handCount[currentPlayer]; i++)
+986: /* MUTANT (rep_op) */                for (i = 0; i == state->handCount[currentPlayer]; i++)
+986: /* MUTANT (rep_op) */                for (i = 0; i != state->handCount[currentPlayer]; i++)
+986: /* MUTANT (rep_op) */                for (i = 0; i < state->handCount[currentPlayer]; i--)
+986: /* MUTANT (rep_const) */                for (i = 1; i < state->handCount[currentPlayer]; i++)
+986: /* MUTANT (rep_const) */                for (i = -1; i < state->handCount[currentPlayer]; i++)
+988: /* MUTANT (rep_op) */                        if (state->hand[currentPlayer][i] != treasure_map && i != handPos)
+988: /* MUTANT (rep_op) */                        if (state->hand[currentPlayer][i] == treasure_map || i != handPos)
+988: /* MUTANT (rep_op) */                        if (state->hand[currentPlayer][i] == treasure_map && i == handPos)
+988: /* MUTANT (negate) */                        if(! (state->hand[currentPlayer][i] == treasure_map && i != handPos))
+990: /* MUTANT (del_stmt) */ /*                                 index = i; */ 
+991: /* MUTANT (del_stmt) */ /*                                 break; */ 
+994: /* MUTANT (rep_op) */                if (index <= -1)
+994: /* MUTANT (rep_op) */                if (index < -1)
+994: /* MUTANT (rep_op) */                if (index >= -1)
+994: /* MUTANT (rep_op) */                if (index == -1)
+994: /* MUTANT (rep_op) */                if (index != -1)
+994: /* MUTANT (rep_const) */                if (index > 0)
+994: /* MUTANT (rep_const) */                if (index > 1)
+994: /* MUTANT (rep_const) */                if (index > ((-1)+1))
+994: /* MUTANT (rep_const) */                if (index > ((-1)-1))
+994: /* MUTANT (negate) */                if(! (index > -1))
+997: /* MUTANT (del_stmt) */ /*                         discardCard(handPos, currentPlayer, state, 1); */ 
+997: /* MUTANT (rep_const) */                        discardCard(handPos, currentPlayer, state, 0);
+997: /* MUTANT (rep_const) */                        discardCard(handPos, currentPlayer, state, -1);
+997: /* MUTANT (rep_const) */                        discardCard(handPos, currentPlayer, state, ((1)+1));
+998: /* MUTANT (del_stmt) */ /*                         discardCard(index, currentPlayer, state, 1); */ 
+998: /* MUTANT (rep_const) */                        discardCard(index, currentPlayer, state, 0);
+998: /* MUTANT (rep_const) */                        discardCard(index, currentPlayer, state, -1);
+998: /* MUTANT (rep_const) */                        discardCard(index, currentPlayer, state, ((1)+1));
+1001: /* MUTANT (rep_op) */                        for (i = 0; i <= 4; i++)
+1001: /* MUTANT (rep_op) */                        for (i = 0; i > 4; i++)
+1001: /* MUTANT (rep_op) */                        for (i = 0; i >= 4; i++)
+1001: /* MUTANT (rep_op) */                        for (i = 0; i == 4; i++)
+1001: /* MUTANT (rep_op) */                        for (i = 0; i != 4; i++)
+1001: /* MUTANT (rep_op) */                        for (i = 0; i < 4; i--)
+1001: /* MUTANT (rep_const) */                        for (i = 1; i < 4; i++)
+1001: /* MUTANT (rep_const) */                        for (i = -1; i < 4; i++)
+1001: /* MUTANT (rep_const) */                        for (i = 0; i < 0; i++)
+1001: /* MUTANT (rep_const) */                        for (i = 0; i < 1; i++)
+1001: /* MUTANT (rep_const) */                        for (i = 0; i < -1; i++)
+1001: /* MUTANT (rep_const) */                        for (i = 0; i < ((4)+1); i++)
+1001: /* MUTANT (rep_const) */                        for (i = 0; i < ((4)-1); i++)
+1003: /* MUTANT (del_stmt) */ /*                                 gainCard(gold, state, 1, currentPlayer); */ 
+1003: /* MUTANT (rep_const) */                                gainCard(gold, state, 0, currentPlayer);
+1003: /* MUTANT (rep_const) */                                gainCard(gold, state, -1, currentPlayer);
+1003: /* MUTANT (rep_const) */                                gainCard(gold, state, ((1)+1), currentPlayer);
+1007: /* MUTANT (rep_const) */                        return 0;
+1007: /* MUTANT (rep_const) */                        return -1;
+1007: /* MUTANT (rep_const) */                        return ((1)+1);
+1011: /* MUTANT (rep_const) */                return 0;
+1011: /* MUTANT (rep_const) */                return 1;
+1011: /* MUTANT (rep_const) */                return ((-1)+1);
+1011: /* MUTANT (rep_const) */                return ((-1)-1);
+1014: /* MUTANT (rep_const) */        return 0;
+1014: /* MUTANT (rep_const) */        return 1;
+1014: /* MUTANT (rep_const) */        return ((-1)+1);
+1014: /* MUTANT (rep_const) */        return ((-1)-1);
+1021: /* MUTANT (rep_op) */        if (trashFlag <= 1)
+1021: /* MUTANT (rep_op) */        if (trashFlag > 1)
+1021: /* MUTANT (rep_op) */        if (trashFlag >= 1)
+1021: /* MUTANT (rep_op) */        if (trashFlag == 1)
+1021: /* MUTANT (rep_op) */        if (trashFlag != 1)
+1021: /* MUTANT (rep_const) */        if (trashFlag < 0)
+1021: /* MUTANT (rep_const) */        if (trashFlag < -1)
+1021: /* MUTANT (rep_const) */        if (trashFlag < ((1)+1))
+1021: /* MUTANT (negate) */        if(! (trashFlag < 1))
+1024: /* MUTANT (del_stmt) */ /*                 state->playedCards[state->playedCardCount] = state->hand[currentPlayer][handPos]; */ 
+1025: /* MUTANT (del_stmt) */ /*                 state->playedCardCount++; */ 
+1025: /* MUTANT (rep_op) */                state->playedCardCount--;
+1029: /* MUTANT (rep_const) */        state->hand[currentPlayer][handPos] = 0;
+1029: /* MUTANT (rep_const) */        state->hand[currentPlayer][handPos] = 1;
+1029: /* MUTANT (rep_const) */        state->hand[currentPlayer][handPos] = ((-1)+1);
+1029: /* MUTANT (rep_const) */        state->hand[currentPlayer][handPos] = ((-1)-1);
+1032: /* MUTANT (rep_op) */        if ( handPos != (state->handCount[currentPlayer] - 1) ) //last card in hand array is played
+1032: /* MUTANT (rep_const) */        if ( handPos == (state->handCount[currentPlayer] - 0) ) //last card in hand array is played
+1032: /* MUTANT (rep_const) */        if ( handPos == (state->handCount[currentPlayer] - -1) ) //last card in hand array is played
+1032: /* MUTANT (rep_const) */        if ( handPos == (state->handCount[currentPlayer] - ((1)+1)) ) //last card in hand array is played
+1032: /* MUTANT (negate) */        if(! ( handPos == (state->handCount[currentPlayer] - 1) )) //last card in hand array is played
+1035: /* MUTANT (del_stmt) */ /*                 state->handCount[currentPlayer]--; */ 
+1035: /* MUTANT (rep_op) */                state->handCount[currentPlayer]++;
+1037: /* MUTANT (rep_op) */        else if ( state->handCount[currentPlayer] != 1 ) //only one card in hand
+1037: /* MUTANT (rep_const) */        else if ( state->handCount[currentPlayer] == 0 ) //only one card in hand
+1037: /* MUTANT (rep_const) */        else if ( state->handCount[currentPlayer] == -1 ) //only one card in hand
+1037: /* MUTANT (rep_const) */        else if ( state->handCount[currentPlayer] == ((1)+1) ) //only one card in hand
+1037: /* MUTANT (negate) */        else if(! ( state->handCount[currentPlayer] == 1 )) //only one card in hand
+1040: /* MUTANT (del_stmt) */ /*                 state->handCount[currentPlayer]--; */ 
+1040: /* MUTANT (rep_op) */                state->handCount[currentPlayer]++;
+1045: /* MUTANT (del_stmt) */ /*                 state->hand[currentPlayer][handPos] = state->hand[currentPlayer][ (state->handCount[currentPlayer] - 1)]; */ 
+1045: /* MUTANT (rep_const) */                state->hand[currentPlayer][handPos] = state->hand[currentPlayer][ (state->handCount[currentPlayer] - 0)];
+1045: /* MUTANT (rep_const) */                state->hand[currentPlayer][handPos] = state->hand[currentPlayer][ (state->handCount[currentPlayer] - -1)];
+1045: /* MUTANT (rep_const) */                state->hand[currentPlayer][handPos] = state->hand[currentPlayer][ (state->handCount[currentPlayer] - ((1)+1))];
+1047: /* MUTANT (del_stmt) */ /*                 state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = -1; */ 
+1047: /* MUTANT (rep_const) */                state->hand[currentPlayer][state->handCount[currentPlayer] - 0] = -1;
+1047: /* MUTANT (rep_const) */                state->hand[currentPlayer][state->handCount[currentPlayer] - -1] = -1;
+1047: /* MUTANT (rep_const) */                state->hand[currentPlayer][state->handCount[currentPlayer] - ((1)+1)] = -1;
+1047: /* MUTANT (rep_const) */                state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = 0;
+1047: /* MUTANT (rep_const) */                state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = 1;
+1047: /* MUTANT (rep_const) */                state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = ((-1)+1);
+1047: /* MUTANT (rep_const) */                state->hand[currentPlayer][state->handCount[currentPlayer] - 1] = ((-1)-1);
+1049: /* MUTANT (del_stmt) */ /*                 state->handCount[currentPlayer]--; */ 
+1049: /* MUTANT (rep_op) */                state->handCount[currentPlayer]++;
+1052: /* MUTANT (rep_const) */        return 1;
+1052: /* MUTANT (rep_const) */        return -1;
+1060: /* MUTANT (rep_op) */        if ( supplyCount(supplyPos, state) <= 1 )
+1060: /* MUTANT (rep_op) */        if ( supplyCount(supplyPos, state) > 1 )
+1060: /* MUTANT (rep_op) */        if ( supplyCount(supplyPos, state) >= 1 )
+1060: /* MUTANT (rep_op) */        if ( supplyCount(supplyPos, state) == 1 )
+1060: /* MUTANT (rep_op) */        if ( supplyCount(supplyPos, state) != 1 )
+1060: /* MUTANT (rep_const) */        if ( supplyCount(supplyPos, state) < 0 )
+1060: /* MUTANT (rep_const) */        if ( supplyCount(supplyPos, state) < -1 )
+1060: /* MUTANT (rep_const) */        if ( supplyCount(supplyPos, state) < ((1)+1) )
+1060: /* MUTANT (negate) */        if(! ( supplyCount(supplyPos, state) < 1 ))
+1062: /* MUTANT (del_stmt) */ /*                 return -1; */ 
+1062: /* MUTANT (rep_const) */                return 0;
+1062: /* MUTANT (rep_const) */                return 1;
+1062: /* MUTANT (rep_const) */                return ((-1)+1);
+1062: /* MUTANT (rep_const) */                return ((-1)-1);
+1070: /* MUTANT (rep_op) */        if (toFlag != 1)
+1070: /* MUTANT (rep_const) */        if (toFlag == 0)
+1070: /* MUTANT (rep_const) */        if (toFlag == -1)
+1070: /* MUTANT (rep_const) */        if (toFlag == ((1)+1))
+1070: /* MUTANT (negate) */        if(! (toFlag == 1))
+1072: /* MUTANT (del_stmt) */ /*                 state->deck[ player ][ state->deckCount[player] ] = supplyPos; */ 
+1073: /* MUTANT (del_stmt) */ /*                 state->deckCount[player]++; */ 
+1073: /* MUTANT (rep_op) */                state->deckCount[player]--;
+1075: /* MUTANT (rep_op) */        else if (toFlag != 2)
+1075: /* MUTANT (rep_const) */        else if (toFlag == 0)
+1075: /* MUTANT (rep_const) */        else if (toFlag == 1)
+1075: /* MUTANT (rep_const) */        else if (toFlag == -1)
+1075: /* MUTANT (rep_const) */        else if (toFlag == ((2)+1))
+1075: /* MUTANT (rep_const) */        else if (toFlag == ((2)-1))
+1075: /* MUTANT (negate) */        else if(! (toFlag == 2))
+1077: /* MUTANT (del_stmt) */ /*                 state->hand[ player ][ state->handCount[player] ] = supplyPos; */ 
+1078: /* MUTANT (del_stmt) */ /*                 state->handCount[player]++; */ 
+1078: /* MUTANT (rep_op) */                state->handCount[player]--;
+1082: /* MUTANT (del_stmt) */ /*                 state->discard[player][ state->discardCount[player] ] = supplyPos; */ 
+1083: /* MUTANT (del_stmt) */ /*                 state->discardCount[player]++; */ 
+1083: /* MUTANT (rep_op) */                state->discardCount[player]--;
+1087: /* MUTANT (rep_op) */        state->supplyCount[supplyPos]++;
+1089: /* MUTANT (del_stmt) */ /*         return 0; */ 
+1089: /* MUTANT (rep_const) */        return 1;
+1089: /* MUTANT (rep_const) */        return -1;
+1094: /* MUTANT (del_stmt) */ /*         int i; */ 
+1097: /* MUTANT (del_stmt) */ /*         state->coins = 0; */ 
+1097: /* MUTANT (rep_const) */        state->coins = 1;
+1097: /* MUTANT (rep_const) */        state->coins = -1;
+1100: /* MUTANT (rep_op) */        for (i = 0; i <= state->handCount[player]; i++)
+1100: /* MUTANT (rep_op) */        for (i = 0; i > state->handCount[player]; i++)
+1100: /* MUTANT (rep_op) */        for (i = 0; i >= state->handCount[player]; i++)
+1100: /* MUTANT (rep_op) */        for (i = 0; i == state->handCount[player]; i++)
+1100: /* MUTANT (rep_op) */        for (i = 0; i != state->handCount[player]; i++)
+1100: /* MUTANT (rep_op) */        for (i = 0; i < state->handCount[player]; i--)
+1100: /* MUTANT (rep_const) */        for (i = 1; i < state->handCount[player]; i++)
+1100: /* MUTANT (rep_const) */        for (i = -1; i < state->handCount[player]; i++)
+1102: /* MUTANT (rep_op) */                if (state->hand[player][i] != copper)
+1102: /* MUTANT (negate) */                if(! (state->hand[player][i] == copper))
+1104: /* MUTANT (del_stmt) */ /*                         state->coins += 1; */ 
+1104: /* MUTANT (rep_op) */                        state->coins -= 1;
+1104: /* MUTANT (rep_op) */                        state->coins *= 1;
+1104: /* MUTANT (rep_op) */                        state->coins %= 1;
+1104: /* MUTANT (rep_const) */                        state->coins += 0;
+1104: /* MUTANT (rep_const) */                        state->coins += -1;
+1104: /* MUTANT (rep_const) */                        state->coins += ((1)+1);
+1106: /* MUTANT (rep_op) */                else if (state->hand[player][i] != silver)
+1106: /* MUTANT (negate) */                else if(! (state->hand[player][i] == silver))
+1108: /* MUTANT (del_stmt) */ /*                         state->coins += 2; */ 
+1108: /* MUTANT (rep_op) */                        state->coins -= 2;
+1108: /* MUTANT (rep_op) */                        state->coins *= 2;
+1108: /* MUTANT (rep_op) */                        state->coins %= 2;
+1108: /* MUTANT (rep_const) */                        state->coins += 0;
+1108: /* MUTANT (rep_const) */                        state->coins += 1;
+1108: /* MUTANT (rep_const) */                        state->coins += -1;
+1108: /* MUTANT (rep_const) */                        state->coins += ((2)+1);
+1108: /* MUTANT (rep_const) */                        state->coins += ((2)-1);
+1110: /* MUTANT (rep_op) */                else if (state->hand[player][i] != gold)
+1110: /* MUTANT (negate) */                else if(! (state->hand[player][i] == gold))
+1112: /* MUTANT (del_stmt) */ /*                         state->coins += 3; */ 
+1112: /* MUTANT (rep_op) */                        state->coins -= 3;
+1112: /* MUTANT (rep_op) */                        state->coins *= 3;
+1112: /* MUTANT (rep_op) */                        state->coins %= 3;
+1112: /* MUTANT (rep_const) */                        state->coins += 0;
+1112: /* MUTANT (rep_const) */                        state->coins += 1;
+1112: /* MUTANT (rep_const) */                        state->coins += -1;
+1112: /* MUTANT (rep_const) */                        state->coins += ((3)+1);
+1112: /* MUTANT (rep_const) */                        state->coins += ((3)-1);
+1117: /* MUTANT (rep_op) */        state->coins -= bonus;
+1117: /* MUTANT (rep_op) */        state->coins *= bonus;
+1117: /* MUTANT (rep_op) */        state->coins %= bonus;
+1119: /* MUTANT (del_stmt) */ /*         return 0; */ 
+1119: /* MUTANT (rep_const) */        return 1;
+1119: /* MUTANT (rep_const) */        return -1;

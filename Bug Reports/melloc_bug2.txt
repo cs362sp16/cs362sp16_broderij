@@ -1,0 +1,4 @@
+Name: Action not given
+File: dominion.c
+Function: Village
+Village doesn't properly give 2 actions. This would be fixed if there were another action.

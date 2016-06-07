@@ -1,0 +1,11 @@
+In order to find most of the bugs I found in the dominion code, I ran the tests I wrote and noted their failures. This was very helpful in identifying a bug, and where a bug was located, but wasn’t as helpful in determining why the bug happened. In order to determine why the bug happened I used gdb (lldb, which is the mac version). This allowed me to put watches on specific variables, and go through the program step by step. I was able to run gdb against the playdominion executable in order to find any bugs that existed. This allowed me to figure out the state of the program. In order to determine what the state of the program meant, I needed to understand what everything does in the program. This is where Agans’ rules comes in.
+
+Rule 1: Understand the System
+This was required in order to figure out what was going to be fixed. Understanding what choices were in the cards, or understanding what the cards were supposed to do was insanely important for finding fixes for the bugs in the code.
+
+Rule 2: Make It Fail
+This was necessary when a test flagged something as a failure. Sometimes the smithy card would be discarded where others it wouldn’t. There was much digging necessary to realize that the discard function was handed the wrong card, and should have been executed a few lines below where it was. 
+
+Rule 9: If You Didn’t Fix It, It Ain’t Fixed
+This was important because a lot of the bugs in the dominion code are seemingly small, but are actually much bigger than they appeared to be. This was apparent with the village function that was actually hitting an error at the actions variable that was getting changed elsewhere in the code. I expected the problem to be in the village function when I actually had to hunt it down elsewhere.
+

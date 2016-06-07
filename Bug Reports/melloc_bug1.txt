@@ -1,0 +1,4 @@
+Name: Increment Off By Four Error
+File: dominion.c
+Function: Smithy
+Smithy doesn't discard itself. This could be fixed by adding a discard after the draw loop.
